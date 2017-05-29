@@ -2,7 +2,9 @@
 
 ## My Personal Website
 
-Link: http://alanquintero.us-west-1.elasticbeanstalk.com/
+Working Example: http://alanquintero.us-west-1.elasticbeanstalk.com/
+
+Link: http://alanquintero.com.mx/
 
 
 
