@@ -239,3 +239,10 @@ img {
   color:blue;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
+
+.container-center {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
