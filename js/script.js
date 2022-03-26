@@ -91,13 +91,13 @@ function disableDarkMode() {
 function setListAlignment() {
 	this.mobile = window.matchMedia('(max-width: 768px)').matches;
 	if(this.mobile) {
-		for(var i = 1; i <= 16; i++) {
+		for(var i = 1; i <= 5; i++) {
 			var element = "headElement" + i;
 			var ilList = document.getElementById(element);
 			ilList.classList.add("col-xs-6");
 		}
 	} else {
-		for(var i = 1; i <= 14; i++) {
+		for(var i = 1; i <= 5; i++) {
 			var element = "headElement" + i;
 			var ilList = document.getElementById(element);
 			ilList.classList.remove("col-xs-6");
