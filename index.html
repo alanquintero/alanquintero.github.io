@@ -3,8 +3,8 @@
 	<head prefix="og: http://ogp.me/ns#">
 		<meta property="og:type" content="profile" />
 		<meta property="og:title" content="Alan Quintero" />
-		<meta property="og:url" content="http://alanquintero.com.mx/" />
-		<meta property="og:image" content="http://alanquintero.com.mx/img/AlanQuinteroShare.png?ver=1" />
+		<meta property="og:url" content="https://alan-quintero.herokuapp.com/" />
+		<meta property="og:image" content="https://alan-quintero.herokuapp.com/img/AlanQuinteroShare.png?ver=1" />
 		<meta property="profile:first_name" content="Alan" />
 		<meta property="profile:last_name" content="Quintero" />
 		<meta charset="utf-8">
@@ -16,13 +16,13 @@
 		<link rel="icon" href="img/AlanQuintero.ico">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/landing-page.css?ver=4" rel="stylesheet">
-		<link href="css/style.css?ver=4" rel="stylesheet">
+		<link href="css/style.css?ver=5" rel="stylesheet">
 		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
 	</head>
 	<body>
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <nav class="navbar navbar-light-style navbar-fixed-top topnav" role="navigation" id="navbar">
 		<div class="container topnav">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -32,6 +32,10 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand topnav" href="#">Home</a>
+				<label class="switch">
+					<input onclick="handleDarkMode()"  type="checkbox">
+					<span class="slider round"></span>
+				</label>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
@@ -69,7 +73,7 @@
 
     <!-- Header -->
     <a name="home"></a>
-    <div class="intro-header">
+    <div class="intro-header" id="intro-header">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -99,7 +103,7 @@
 
 	<!-- About Me -->
 	<a  name="about"></a>
-    <div class="content-section-a">
+    <div class="content-section-a light-mode">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -148,7 +152,7 @@
 				<li>
 					<img class="timeline-badge info" class="img-responsive" src="img/meta.png" alt="" style="width:50px;height:50px;">
 					<div class="timeline-panel">
-						<div class="timeline-heading">
+						<div class="timeline-heading" id="meta-company">
 							<h4 class="timeline-title">Meta</h4>
 							<h5>Menlo Park, California, USA</h5>
 							<h6 class="timeline-title">November 2020 to Present</h6>
@@ -393,7 +397,7 @@
 
     <!-- Skills -->
     <a name="skills"></a>
-    <div class="content-section-a">
+    <div class="content-section-a light-mode">
 		<div class="container">
 			<div>
 				<h1>Skills</h1>
@@ -474,7 +478,7 @@
 
 	<!-- Certifications -->
     <a  name="certifications"></a>
-    <div class="content-section-a">
+    <div class="content-section-a light-mode">
 		<div class="container">
 			<div>
 				<h1>Certifications</h1>
@@ -566,7 +570,7 @@
 
 	<!-- Projects -->
 	<a name="projects"></a>
-	<div class="content-section-a">
+	<div class="content-section-a light-mode">
 		<div class="container">
 			<div>
 				<h1>Projects</h1>
@@ -744,7 +748,7 @@
 	
 	<!-- Contact Information -->
 	<a name="contact"></a>
-    <div class="banner">
+    <div class="banner"  id="banner">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5">
@@ -772,7 +776,7 @@
     </div>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -822,64 +826,7 @@
 			</div>
 		</div>
     </footer>
-
-    <script>
-		this.mobile = window.matchMedia('(max-width: 768px)').matches;
-		matchMedia("(min-width: 769px)").addListener(setListAlignment);
-		if(this.mobile) {
-			setListAlignment();
-		}
-
-		function setListAlignment() {
-			this.mobile = window.matchMedia('(max-width: 768px)').matches;
-			if(this.mobile) {
-				for(var i = 1; i <= 16; i++) {
-					var element = "headElement" + i;
-					var ilList = document.getElementById(element);
-					ilList.classList.add("col-xs-6");
-				}
-			} else {
-				for(var i = 1; i <= 14; i++) {
-					var element = "headElement" + i;
-					var ilList = document.getElementById(element);
-					ilList.classList.remove("col-xs-6");
-				}
-			}
-		}
-	  
-		function copyToClipboard() {
-			var aux = document.createElement("input");
-			aux.setAttribute("value", 'se.alan.quintero@outlook.com');
-			document.body.appendChild(aux);
-			aux.select();
-			document.execCommand("copy");
-			document.body.removeChild(aux);
-
-			var copyButton = document.getElementById("copy");
-			copyButton.innerHTML = "Copied";
-			copyButton.classList.remove('btn-primary');
-			copyButton.classList.add('btn-success');
-
-			setTimeout(function() {
-				document.getElementById("copy").innerHTML = "Copy";
-					copyButton.classList.remove('btn-success');
-					copyButton.classList.add('btn-primary');
-			}, 5000);
-		}
-	  
-		function showResume() {
-			var show = document.getElementById("show-resume");
-			var btn = document.getElementById("show-button");
-			if (show.style.display === "none") {
-				show.style.display = "block";
-				btn.innerHTML = 'Show less...';
-			} else {
-				show.style.display = "none";
-				btn.innerHTML = 'Show more...';
-				window.location.href="#resume";
-			}
-		}
-    </script>
+    <script src="js/script.js"></script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
