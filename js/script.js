@@ -12,18 +12,23 @@ var lightModeBackgroundColorSectionA = '#f8f8f8';
 var darkModeColor = 'white';
 var darkModeBackgroundColor = 'black';
 var darkModeBackgroundColorSectionA = '#222';
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    enableDarkMode();
+} else {
+	disableDarkMode();
+}
 		
 function handleDarkMode() {
 	if(isDarkModeEnabled) {
-		isDarkModeEnabled = false;
 		disableDarkMode();
 	} else {
-		isDarkModeEnabled = true;
 		enableDarkMode();
 	}
 }
 		
 function enableDarkMode() {
+	isDarkModeEnabled = true;
 	// intro header 
 	const header = document.getElementById("intro-header");
 	header.style.backgroundImage = "url(img/intro-bg-2.jpg)";
@@ -56,6 +61,8 @@ function enableDarkMode() {
 }
 		
 function disableDarkMode() {
+	isDarkModeEnabled = false;
+	
 	// intro header 
 	const header = document.getElementById("intro-header");
 	header.style.backgroundImage = "url(img/intro-bg.jpg)";
