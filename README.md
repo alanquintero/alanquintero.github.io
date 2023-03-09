@@ -1,2 +1,2 @@
 Alan Quintero - Software Engineer - personal website.
-https://alan-quintero.herokuapp.com/
+https://alanquintero.github.io/
