@@ -114,7 +114,7 @@ function setListAlignment() {
 	  
 function copyToClipboard() {
 	var aux = document.createElement("input");
-	aux.setAttribute("value", 'se.alan.quintero@outlook.com');
+	aux.setAttribute("value", 'alanq.swe@outlook.com');
 	document.body.appendChild(aux);
 	aux.select();
 	document.execCommand("copy");
