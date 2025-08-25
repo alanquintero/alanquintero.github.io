@@ -144,3 +144,24 @@ function showResume() {
 		window.location.href="#resume";
 	}
 }
+
+function enableImageModal() {
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const images = document.querySelectorAll('.img-fluid.rounded');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalImg.src = img.src;
+      document.body.style.overflow = 'hidden'; // Blocks scroll when image is opened
+    });
+  });
+
+  modal.addEventListener('click', () => {
+    modal.style.display = 'none';
+    document.body.style.overflow = ''; // Restores scroll
+  });
+}
+
+document.addEventListener('DOMContentLoaded', enableImageModal);

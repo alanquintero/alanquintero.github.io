@@ -1,3 +1,6 @@
+.clickable-img {
+    cursor: pointer;
+}
 
 img {
     max-width: 100%;
