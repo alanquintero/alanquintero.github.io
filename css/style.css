@@ -1,3 +1,10 @@
+/* space line for mobile */
+@media (max-width: 767px) {
+  .spacing-mobile {
+    margin-bottom: 15px;
+  }
+}
+
 .switch {
   position: relative;
   display: inline-block;
