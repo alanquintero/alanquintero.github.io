@@ -7,11 +7,13 @@ if(this.mobile) {
 var isDarkModeEnabled = false;
 var lightModeColor = 'black';
 var lightModeButtonsColor = '#333';
-var lightModeBackgroundColor = 'white';
-var lightModeBackgroundColorSectionA = '#f8f8f8';
+var lightModeBackgroundColor = '#FCFCFC';
+var lightModeButtonHoverColor = "#D0D0D0"; 
+var lightModeBackgroundColorSectionA = '#DFDFDF';
 var darkModeColor = 'white';
-var darkModeBackgroundColor = 'black';
-var darkModeBackgroundColorSectionA = '#222';
+var darkModeBackgroundColor = '#1A1A1A';
+var darkModeButtonHoverColor = "#3A3A3A"; 
+var darkModeBackgroundColorSectionA = '#2C2C2C';
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     enableDarkMode();
@@ -54,9 +56,20 @@ function enableDarkMode() {
 			
 	// buttons
 	const buttons = document.getElementsByClassName("btn");
-	for(var i = 0; i < buttons.length; i++) {
+	for(let i = 0; i < buttons.length; i++) {
+		// base style
 		buttons[i].style.backgroundColor = darkModeBackgroundColorSectionA;
 		buttons[i].style.color = darkModeColor;
+
+		// hover in
+		buttons[i].addEventListener("mouseenter", function () {
+		    buttons[i].style.backgroundColor = darkModeButtonHoverColor;
+		});
+
+		 // hover out
+		 buttons[i].addEventListener("mouseleave", function () {
+		    buttons[i].style.backgroundColor = darkModeBackgroundColorSectionA;
+		 });
 	}
 }
 		
@@ -89,9 +102,20 @@ function disableDarkMode() {
 			
 	// buttons
 	const buttons = document.getElementsByClassName("btn");
-	for(var i = 0; i < buttons.length; i++) {
+	for(let i = 0; i < buttons.length; i++) {
+		// base style
 		buttons[i].style.backgroundColor = lightModeBackgroundColorSectionA;
 		buttons[i].style.color = lightModeButtonsColor;
+
+		// hover in
+		buttons[i].addEventListener("mouseenter", function () {
+		    buttons[i].style.backgroundColor = lightModeButtonHoverColor;
+		});
+
+		 // hover out
+		 buttons[i].addEventListener("mouseleave", function () {
+		    buttons[i].style.backgroundColor = lightModeBackgroundColorSectionA;
+		 });
 	}
 }
 
