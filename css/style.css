@@ -204,7 +204,21 @@ img {
             border: 2px solid #000;
         }
 
-        .timeline-content-image-top-right {
+        .timeline-content-images-top-right {
+            color: #fff;
+            width: 90px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1.4em;
+            text-align: center;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            margin-left: -25px;
+            z-index: 100;
+        }
+
+        .timeline-content-single-image-top-right {
             color: #fff;
             width: 50px;
             height: 50px;
