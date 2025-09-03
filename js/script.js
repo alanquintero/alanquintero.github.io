@@ -122,13 +122,13 @@ function disableDarkMode() {
 function setListAlignment() {
 	this.mobile = window.matchMedia('(max-width: 768px)').matches;
 	if(this.mobile) {
-		for(var i = 1; i <= 5; i++) {
+		for(var i = 1; i <= 4; i++) {
 			var element = "headElement" + i;
 			var ilList = document.getElementById(element);
 			ilList.classList.add("col-xs-6");
 		}
 	} else {
-		for(var i = 1; i <= 5; i++) {
+		for(var i = 1; i <= 4; i++) {
 			var element = "headElement" + i;
 			var ilList = document.getElementById(element);
 			ilList.classList.remove("col-xs-6");
@@ -145,12 +145,12 @@ function copyToClipboard() {
 	document.body.removeChild(aux);
 
 	var copyButton = document.getElementById("copy");
-	copyButton.innerHTML = "Copied";
+	copyButton.innerHTML = "Email copied";
 	copyButton.classList.remove('btn-primary');
 	copyButton.classList.add('btn-success');
 
 	setTimeout(function() {
-		document.getElementById("copy").innerHTML = "Copy";
+		document.getElementById("copy").innerHTML = "Copy email";
 			copyButton.classList.remove('btn-success');
 			copyButton.classList.add('btn-primary');
 	}, 5000);

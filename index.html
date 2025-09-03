@@ -17,8 +17,8 @@
 		<title>Alan Quintero</title>
 		<link rel="icon" href="img/AlanQuintero.ico">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/landing-page.css?ver=4" rel="stylesheet">
-		<link href="css/style.css?ver=7.3" rel="stylesheet">
+		<link href="css/landing-page.css?ver=4.1" rel="stylesheet">
+		<link href="css/style.css?ver=7.4" rel="stylesheet">
 		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
 	</head>
@@ -67,9 +67,6 @@
 					</li>
 					<li>
 						<a href="#moreabout">More About Me</a>
-					</li>
-					<li>
-						<a href="#contact">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -121,27 +118,32 @@
 					<p class="lead">Hi! I’m Alan Quintero, a Software Engineer with experience in both Android development and backend systems.<br/>
 						I specialize in Java and enjoy using modern tools to optimize workflows and deliver high-quality, efficient solutions. I’m committed to continuous learning and believe every experience helps us grow into better versions of ourselves.</p>
 					<p class="lead"><u>Work authorization</u>: U.S. citizenship</p>
-					<br/>
-					<div class="row">
-						<div class="col-lg-5 col-sm-6">
-							<u>Contact Details</u>
-							<br/>
-							<ul class="list-unstyled">
-								<li>
-									<i class="fa fa-envelope-o fa-fw"></i>
-									<a href="mailto:alanq.swe@outlook.com">alanq.swe@outlook.com</a>
-								</li>
-								<li>
-									<span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;San Diego, CA, USA</b>
-								</li>
-							</ul>
-						</div>
-						<div class="col-lg-5 col-sm-6">
-							<a href="resources/AlanQuintero.pdf" download="Alan Quintero.pdf" class="btn btn-info btn-lg">
-								<span class="glyphicon glyphicon-download-alt"></span>&nbsp;Download Resume
-							</a>
-						</div>
+					<div class="col-lg-5 col-sm-6"> 
+						<a href="resources/AlanQuintero.pdf" download="Alan Quintero.pdf" class="btn btn-info btn-lg"> 
+							<span class="glyphicon glyphicon-download-alt"></span>&nbsp;Download Resume 
+						</a> 
 					</div>
+				</div>
+				<br/><br/>
+				<div class="col-lg-5 col-sm-6 contact-details">
+					<u>Contact Details</u>
+					<br/>
+					<ul class="list-inline">
+						<li>
+							<i class="fa fa-envelope-o fa-fw"></i>
+							<a href="mailto:alanq.swe@outlook.com">alanq.swe@outlook.com</a>&nbsp;&nbsp;&nbsp;&nbsp;
+							<button type="button" id="copy" class="btn btn-primary btn-xs pull-right" onclick="copyToClipboard();">Copy email</button>
+						</li>
+						<br/>
+						<li>
+							<span class="fa fa-linkedin-square fa-fw"></span>
+							<a href="https://www.linkedin.com/in/alan-quintero" target="_blank">in/alan-quintero</a>
+						</li>
+						<br/>
+						<li>
+							<span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;San Diego, CA, USA
+						</li>	
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -153,6 +155,9 @@
 		<div class="container">
 			<div class="page-header">
 				<h1 id="timeline">Resume</h1>
+				<a href="resources/AlanQuintero.pdf" download="Alan Quintero.pdf" class="btn btn-info btn-lg">
+					<span class="glyphicon glyphicon-download-alt"></span>&nbsp;Download Resume
+			  </a>
 			</div>
 			<ul class="timeline">
 				<li>
@@ -579,36 +584,6 @@
 			</div>
 		</div>
     </div>
-	<br/><br/>
-	
-	<!-- Contact Information -->
-	<a name="contact"></a>
-    <div class="banner"  id="banner">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5">
-					<h2>Contact Information:</h2>
-				</div>
-				<div class="col-lg-5">
-					<ul class="list-inline banner-social-buttons">
-						<li>
-							<i class="fa fa-envelope-o fa-fw"></i>
-							<a href="mailto:alanq.swe@outlook.com">&nbsp;alanq.swe@outlook.com&nbsp;&nbsp;</a>
-							<button type="button" id="copy" class="btn btn-primary" onclick="copyToClipboard();">Copy</button>
-						</li>
-						<br/>
-						<li>
-							<span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;San Diego, CA, USA</b>
-						</li>
-						<br/><br/>
-						<li id="headElement5">
-							<a href="https://www.linkedin.com/in/alan-quintero" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i><span class="network-name"></span></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-    </div>
 
     <!-- Footer -->
     <footer id="footer">
@@ -652,16 +627,13 @@
 							<a href="#moreabout">More About Me</a>
 						</li>
 						<li class="footer-menu-divider">&sdot;</li>
-						<li>
-							<a href="#contact">Contact</a>
-						</li>
 					</ul>
 					<p class="copyright text-muted small">Copyright &copy; Alan Quintero. All Rights Reserved</p>
 				</div>
 			</div>
 		</div>
     </footer>
-	<script src="js/script.js?ver=2.2"></script>
+	<script src="js/script.js?ver=2.3"></script>
 	</script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

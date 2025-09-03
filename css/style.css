@@ -1,3 +1,20 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-inline > li {
+   margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.contact-details{
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 15px;
+}
+
 /* space line for mobile */
 @media (max-width: 767px) {
   .spacing-mobile {
