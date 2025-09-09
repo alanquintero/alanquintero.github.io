@@ -1,10 +1,43 @@
-.intro-message {
-    padding-top: 180px;
-    padding-bottom: 50px;
+/**
+ ***** GENERAL *****
+*/
+
+body,
+html {
+    width: 100%;
+    height: 100%;
 }
 
-.navbar-right .switch {
-    margin-left: 15px;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
 }
 
 .page-header {
@@ -15,83 +48,8 @@
 
 .list-inline > li {
    margin-top: 4px;
-  margin-bottom: 4px;
+   margin-bottom: 4px;
 }
-
-.contact-details{
-  border: 2px solid #000;
-  border-radius: 5px;
-  padding: 15px;
-}
-
-/* space line for mobile */
-@media (max-width: 767px) {
-  .spacing-mobile {
-    margin-bottom: 15px;
-  }
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 30px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* Slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  background-color: #ccc;
-  border-radius: 30px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: 0.4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 2px;
-  bottom: 2px;
-  background-color: white;
-  border-radius: 50%;
-  transition: 0.4s;
-}
-
-/* Move the circle when checked */
-input:checked + .slider:before {
-  transform: translateX(30px);
-}
-
-/* Sun and Moon icons */
-.icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 16px;
-  pointer-events: none;
-  user-select: none;
-}
-
-.icon.sun {
-  left: 8px;
-}
-
-.icon.moon {
-  right: 8px;
-}
-
 
 .clickable-img {
     cursor: pointer;
@@ -102,35 +60,26 @@ img {
     height: auto;
 }
 
-.certification-img {
-  width:450px;
-  height:350px;
-  border: 3px solid black;
+/* space line for mobile */
+@media (max-width: 767px) {
+  .spacing-mobile {
+    margin-bottom: 15px;
+  }
 }
 
-.award-img {
-  width:450px;
-  height:350px;
-  border: 3px solid black;
+footer {
+    padding: 50px 0;
 }
 
-.carousel-square {
-  width:450px;
-  height:480px;
-  border: 2px solid black;
+.footer-style {
+    background-color: #f8f8f8;
 }
 
-.carousel-img {
-  width:400px;
-  height:320px;
+p.copyright {
+    margin: 15px 0 0;
 }
 
-.more-projects {
-  width:450px;
-  height:350px;
-  border: 3px solid black;
-}
-
+/* TIMELINE for Resume and Education starts */
 .timeline {
     list-style: none;
     padding: 20px 0 20px;
@@ -383,44 +332,134 @@ img {
             right: auto;
         }
 }
+/* TIMELINE for Resume and Education ends */
 
-@media only screen and (max-width: 500px) {
-  .certification-img {
-    width:350px;
-    height:250px;
-  }
 
-  .award-img {
-    width:350px;
-    height:250px;
-  }
+/**
+ ***** NAVIGATION *****
+*/
 
-  .carousel-square {
-    width:320px;
-    height:380px;
-  }
-
-  .carousel-img {
-    width:300px;
-    height:250px;
-  }
-
-  .more-projects {
-    width:350px;
-    height:250px;
-  }
-
+.navbar-right .switch {
+    margin-left: 15px;
 }
 
-.yellow-text {
-  color:yellow;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
 }
 
-.blue-text {
-  color:blue;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
+
+/* Slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* Move the circle when checked */
+input:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+/* Sun and Moon icons */
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.icon.sun {
+  left: 8px;
+}
+
+.icon.moon {
+  right: 8px;
+}
+
+
+/**
+ ***** HOME *****
+*/
+
+.intro-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url("../img/intro-bg.jpg?ver=1") no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 180px;
+    padding-bottom: 50px;
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+/**
+ ***** ABOUT ME *****
+*/
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contact-details {
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+
+/**
+ ***** RESUME *****
+*/
 
 .container-center {
     height: 100%;
@@ -429,7 +468,22 @@ img {
     align-items: center;
 }
 
-/** Dark Mode starts */
+
+/**
+ ***** PROJECTS *****
+*/
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+
+/**
+ ***** Dark/Light Mode starts *****
+*/
 
 .navbar-light-style {
   background-color: #f8f8f8;
@@ -513,4 +567,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/** Dark Mode ends */
+/**
+ ***** Dark/Light Mode ends *****
+*/
