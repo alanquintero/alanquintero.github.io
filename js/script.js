@@ -217,8 +217,8 @@ function showHideResume() {
  * @function
  */
 function enableImageModal() {
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImage');
+    const modal = document.getElementById('imageModalContainer');
+    const modalImg = document.getElementById('imageModal');
     const images = document.querySelectorAll('.img-fluid.rounded');
 
     images.forEach(img => {

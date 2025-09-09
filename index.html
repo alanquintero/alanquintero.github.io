@@ -1,680 +1,743 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	 	<!-- Basic meta -->
-	  	<meta charset="utf-8">
-	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Personal Website of Alan Quintero - Software Engineer">
-		<meta name="author" content="Alan Quintero">
+<head>
+    <!-- Basic meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Website of Alan Quintero - Software Engineer">
+    <meta name="author" content="Alan Quintero">
 
-		<!-- Open Graph for social sharing -->
-		<meta property="og:type" content="profile" />
-		<meta property="og:title" content="Alan Quintero - Software Engineer" />
-		<meta property="og:description" content="Personal website of Alan Quintero, Software Engineer passionate about Android and backend development." />
-		<meta property="og:url" content="https://alanquintero.github.io/" />
-		<meta property="og:image" content="https://alanquintero.github.io/img/AlanQuinteroShare.png" />
-		<meta property="og:locale" content="en_US" />
-		<meta property="profile:first_name" content="Alan" />
-		<meta property="profile:last_name" content="Quintero" />
+    <!-- Open Graph for social sharing -->
+    <meta property="og:type" content="profile"/>
+    <meta property="og:title" content="Alan Quintero - Software Engineer"/>
+    <meta property="og:description"
+          content="Personal website of Alan Quintero, Software Engineer passionate about Android and backend development."/>
+    <meta property="og:url" content="https://alanquintero.github.io/"/>
+    <meta property="og:image" content="https://alanquintero.github.io/img/AlanQuinteroShare.png"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="profile:first_name" content="Alan"/>
+    <meta property="profile:last_name" content="Quintero"/>
 
-		<!-- Title -->
-		<title>Alan Quintero</title>
+    <!-- Title -->
+    <title>Alan Quintero</title>
 
-		<!-- Favicon -->
-		<link rel="icon" href="img/AlanQuintero.ico">
+    <!-- Favicon -->
+    <link rel="icon" href="img/AlanQuintero.ico">
 
-		<!-- CSS -->
-		<link href="vendor/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/style.css?ver=1.3" rel="stylesheet">
+    <!-- CSS -->
+    <link href="vendor/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css?ver=1.4" rel="stylesheet">
 
-		<!-- Fonts -->
-		<link href="fonts/fontawesome-7.0.1-web/css/all.min.css" rel="stylesheet">
-		<link href="fonts/fonts.googleapis.css" rel="stylesheet">
-	</head>
+    <!-- Fonts -->
+    <link href="fonts/fontawesome-7.0.1-web/css/all.min.css" rel="stylesheet">
+    <link href="fonts/fonts.googleapis.css" rel="stylesheet">
+</head>
 
-	<body>
+<body>
 
-	    <!-- ===================================== -->
-		<!-- ========= NAVIGATION ================ -->
-		<!-- ===================================== -->
-	    <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
-		<div class="container">
-		    <!-- Brand and toggle grouped for mobile -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
-		              aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="#">Home</a>
-		    </div>
+<!-- ===================================== -->
+<!-- ========= NAVIGATION ================ -->
+<!-- ===================================== -->
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+    <div class="container">
+        <!-- Brand and toggle grouped for mobile -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+                    aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Home</a>
+        </div>
 
-		    <!-- Dark/Light mode switch -->
-		    <div class="navbar-right">
-		      <label class="switch">
-		        <input id="dark-mode-switch" type="checkbox" onclick="handleDarkMode()" checked aria-label="Toggle dark mode">
-		        <span class="slider round">
+        <!-- Dark/Light mode switch -->
+        <div class="navbar-right">
+            <label class="switch">
+                <input id="dark-mode-switch" type="checkbox" onclick="handleDarkMode()" checked
+                       aria-label="Toggle dark mode">
+                <span class="slider round">
 		          <span class="icon sun">☀</span>
 		          <span class="icon moon">☾</span>
 		        </span>
-		      </label>
-		    </div>
+            </label>
+        </div>
 
-		    <!-- Navbar links -->
-		    <div class="collapse navbar-collapse" id="navbar-collapse">
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#about">About Me</a></li>
-		        <li><a href="#resume">Resume</a></li>
-		        <li><a href="#skills">Skills</a></li>
-		        <li><a href="#education">Education</a></li>
-		        <li><a href="#certifications">Certifications</a></li>
-		        <li><a href="#awards">Awards</a></li>
-		        <li><a href="#projects">Projects</a></li>
-		        <li><a href="#moreabout">More About Me</a></li>
-		      </ul>
-		    </div>
-		  </div>
-		</nav>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#moreabout">More About Me</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-	    <!-- ================================= -->
-		<!-- ========= HOME ================== -->
-		<!-- ================================= -->
-	    <a name="home"></a>
-		<div class="intro-header" id="intro-header">
-		    <div class="container text-center">
-		        <div class="row">
-		            <div class="col-lg-12">
-		                <div class="intro-message">
-		                    <ul class="list-inline intro-social-buttons" id="headList">
-		                    	<!-- LinkedIn -->
-		                        <li class="list-inline" id="headElement1">
-		                            <a href="https://www.linkedin.com/in/alan-quintero" title="LinkedIn" target="_blank" class="btn btn-default btn-lg">
-		                                <i class="fa-brands fa-linkedin fa-fw"></i>
-		                                <span class="network-name"></span>
-		                            </a>
-		                        </li>
-		                        <!-- Android Apps -->
-		                        <li class="list-inline" id="headElement2">
-		                            <a href="https://play.google.com/store/apps/developer?id=Alan+Quintero" title="Android Apps" target="_blank" class="btn btn-default btn-lg">
-		                                <i class="fa-brands fa-android fa-fw"></i>
-		                                <span class="network-name"></span>
-		                            </a>
-		                        </li>
-		                        <!-- Github -->
-		                        <li class="list-inline" id="headElement3">
-		                            <a href="https://github.com/alanquintero" title="Github" target="_blank" class="btn btn-default btn-lg">
-		                                <i class="fa-brands fa-github fa-fw"></i>
-		                                <span class="network-name"></span>
-		                            </a>
-		                        </li>
-		                         <!-- StackOverflow -->
-		                        <li class="list-inline" id="headElement4">
-		                            <a href="https://stackoverflow.com/users/7845497/alan-quintero?tab=profile" title="StackOverflow" target="_blank" class="btn btn-default btn-lg">
-		                                <i class="fa-brands fa-stack-overflow fa-fw"></i>
-		                                <span class="network-name"></span>
-		                            </a>
-		                        </li>
-		                    </ul>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		</div>
+<!-- ================================= -->
+<!-- ========= HOME ================== -->
+<!-- ================================= -->
+<a id="home"></a>
+<div class="intro-header" id="intro-header">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <ul class="list-inline intro-social-buttons" id="headList">
+                        <!-- LinkedIn -->
+                        <li class="list-inline" id="headElement1">
+                            <a href="https://www.linkedin.com/in/alan-quintero" title="LinkedIn" target="_blank"
+                               class="btn btn-default btn-lg">
+                                <i class="fa-brands fa-linkedin fa-fw"></i>
+                                <span class="network-name"></span>
+                            </a>
+                        </li>
+                        <!-- Android Apps -->
+                        <li class="list-inline" id="headElement2">
+                            <a href="https://play.google.com/store/apps/developer?id=Alan+Quintero" title="Android Apps"
+                               target="_blank" class="btn btn-default btn-lg">
+                                <i class="fa-brands fa-android fa-fw"></i>
+                                <span class="network-name"></span>
+                            </a>
+                        </li>
+                        <!-- Github -->
+                        <li class="list-inline" id="headElement3">
+                            <a href="https://github.com/alanquintero" title="Github" target="_blank"
+                               class="btn btn-default btn-lg">
+                                <i class="fa-brands fa-github fa-fw"></i>
+                                <span class="network-name"></span>
+                            </a>
+                        </li>
+                        <!-- StackOverflow -->
+                        <li class="list-inline" id="headElement4">
+                            <a href="https://stackoverflow.com/users/7845497/alan-quintero?tab=profile"
+                               title="StackOverflow" target="_blank" class="btn btn-default btn-lg">
+                                <i class="fa-brands fa-stack-overflow fa-fw"></i>
+                                <span class="network-name"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
-		<!-- ================================= -->
-		<!-- ========= ABOUT ME ============== -->
-		<!-- ================================= -->
-		<a name="about"></a>
-	    <div class="content-section-a light-mode">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5 col-lg-offset-2 col-sm-6">
-						<img class="img-responsive" src="img/profile.jpg?ver=2" alt="" style="width:264px;height:380px;">
-					</div>
-					<div class="col-lg-5 col-sm-6">
-						<hr class="section-heading-spacer">
-						<div class="clearfix"></div>
-						<h2 class="section-heading">About Me</h2>
-						<p class="lead">Hi! I’m Alan Quintero, a Software Engineer with experience in backend systems and Android development.<br/>
-							I specialize in Java and enjoy using modern tools to optimize workflows and deliver high-quality, efficient solutions. I’m committed to continuous learning and believe every experience helps us grow into better versions of ourselves.</p>
-						<p class="lead"><u>Work authorization</u>: U.S. citizenship</p>
-						<div class="col-lg-5 col-sm-6"> 
-							<a href="resources/AlanQuintero.pdf" download="Alan Quintero.pdf" class="btn btn-info btn-lg"> 
-								<i class="fa-solid fa-download"></i>&nbsp;&nbsp;Download Resume
-							</a> 
-						</div>
-					</div>
-					<br/><br/>
-					<div class="col-lg-5 col-sm-6 contact-details">
-						<u>Contact Details</u>
-						<br/>
-						<ul class="list-inline">
-							<li>
-								<i class="fa-solid fa-envelope fa-fw"></i>
-                                <a id="email-link" href="mailto:alanq.swe@outlook.com">alanq.swe@outlook.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								<button type="button" id="copy" class="btn btn-primary btn-xs pull-right" onclick="copyToClipboard();">Copy email</button>
-							</li>
-							<br/>
-							<li>
-								<span class="fa-brands fa-square-linkedin fa-fw"></span>
-								<a href="https://www.linkedin.com/in/alan-quintero" target="_blank">in/alan-quintero</a>
-							</li>
-							<br/>
-							<li>
-								<i class="fa-solid fa-map-marker"></i>&nbsp;&nbsp;San Diego, CA, USA
-							</li>	
-						</ul>
-					</div>
-				</div>
-			</div>
-	    </div>
+<!-- ================================= -->
+<!-- ========= ABOUT ME ============== -->
+<!-- ================================= -->
+<a id="about"></a>
+<div class="content-section-a light-mode">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <img class="img-responsive" src="img/profile.jpg?ver=2" alt="" style="width:264px;height:380px;">
+            </div>
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">About Me</h2>
+                <p class="lead">Hi! I’m Alan Quintero, a Software Engineer with experience in backend systems and
+                    Android development.<br/>
+                    I specialize in Java and enjoy using modern tools to optimize workflows and deliver high-quality,
+                    efficient solutions. I’m committed to continuous learning and believe every experience helps us grow
+                    into better versions of ourselves.</p>
+                <p class="lead"><u>Work authorization</u>: U.S. citizenship</p>
+                <div class="col-lg-5 col-sm-6">
+                    <a href="resources/AlanQuintero.pdf" download="Alan Quintero.pdf" class="btn btn-info btn-lg">
+                        <i class="fa-solid fa-download"></i>&nbsp;&nbsp;Download Resume
+                    </a>
+                </div>
+            </div>
+            <br/><br/>
+            <div class="col-lg-5 col-sm-6 contact-details">
+                <u>Contact Details</u>
+                <br/>
+                <ul class="list-inline">
+                    <li>
+                        <i class="fa-solid fa-envelope fa-fw"></i>
+                        <a id="email-link" href="mailto:alanq.swe@outlook.com">alanq.swe@outlook.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="button" id="copy" class="btn btn-primary btn-xs pull-right"
+                                onclick="copyToClipboard();">Copy email
+                        </button>
+                    </li>
+                    <br/>
+                    <li>
+                        <span class="fa-brands fa-square-linkedin fa-fw"></span>
+                        <a href="https://www.linkedin.com/in/alan-quintero" target="_blank">in/alan-quintero</a>
+                    </li>
+                    <br/>
+                    <li>
+                        <i class="fa-solid fa-map-marker"></i>&nbsp;&nbsp;San Diego, CA, USA
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
-	    <!-- ========================================== -->
-		<!-- ========= SECTION: RESUME ================ -->
-		<!-- ========================================== -->
-	    <a  name="resume"></a>
-	    <div class="content-section-b">
-			<div class="container">
-				<div class="page-header">
-					<h1 id="timeline">Resume</h1>
-					<a href="resources/AlanQuintero.pdf" download="Alan Quintero.pdf" class="btn btn-info btn-lg">
-						<i class="fa-solid fa-download"></i>&nbsp;&nbsp;Download Resume
-				  </a>
-				</div>
-				<ul class="timeline">
-					<li>
-						<img class="timeline-badge info img-responsive" src="img/resume/meta.png">
-						<div class="timeline-panel">
-							<div class="timeline-heading">
-								<h4 class="timeline-title">Meta</h4>
-								<h5>Remote -<br/>based in Menlo Park, California, USA</h5>
-								<h6 class="timeline-title">November 2020 to April 2025</h6>
-							</div>
-							<div class="timeline-body">
-								<img class="timeline-content-images-top-right info img-responsive" src="img/resume/meta-projects.png">
-								<p><u>Role</u>: Software Engineer</p>
-								<ul>
-									<li>
-										Designed and implemented the Android UI for Facebook posts in the Friends tab of Messenger, contributing to a 10% increase in user time spent in the app.
-									</li>
-									<li>
-										Developed the Android messaging infrastructure necessary to support Meta AI on WhatsApp.
-									</li>
-									<li>
-										Conducted A/B testing to analyze and optimize WhatsApp message send times, achieving a 20% improvement through parallelism, caching, and code enhancements—supporting the increase in group participants from 256 to 1024.
-									</li>
-									<br/>
-									<li>
-										<u>Technologies involved</u>: Android | Java 10 | Kotlin | JUnit | Espresso | Git
-									</li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="timeline-inverted">
-						<img class="timeline-badge info img-responsive" src="img/resume/bind.png">
-						<div class="timeline-panel">
-							<div class="timeline-heading">
-								<h4 class="timeline-title">Bind On-Demand Health Insurance</h4>
-								<h5>Remote – based in San Francisco, California, USA</h5>
-								<h6 class="timeline-title">May 2020 to October 2020</h6>
-							</div>
-							<div class="timeline-body">
-								<p><u>Role</u>: Software Engineer</p>
-								<ul>
-									<li>
-										<u>Health Insurance Industry</u>: worked on the claims system implementing new functionality and fixed bugs in the back-end, reducing the bugs reported by sonarQube by 85%.
-									</li>
-									<li>
-										Contributed to the integration, automation, and documentation of a claim process that uses a .NET vendor application.
-									</li>
-									<br>
-									<li>
-										<u>Technologies involved</u>:  Java 11 | Spring Boot | Gradle | AWS | JUnit 4 | Jenkins | Sumo Logic | Git | SonarQube
-									</li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li>
-						<img class="timeline-badge info img-responsive" src="img/resume/zume.png">
-						<div class="timeline-panel">
-							<div class="timeline-heading">
-								<h4 class="timeline-title">Zume</h4>
-								<h5>Mountain View, California, USA</h5>
-								<h6 class="timeline-title">September 2019 to March 2020</h6>
-							</div>
-							<div class="timeline-body">
-								<p><u>Role</u>: Software Engineer</p>
-								<ul>
-									<li>
-										<u>Food Industry</u>: worked on the back-end development to implement REST microservices and worked on the front-end to create an internal web application. Created a web application using VueJS to present demos to potential clients in order to show the customer food pickup experience.
-									</li>
-									<br>
-									<li>
-										<u>Technologies involved</u>: TypeScript / JavaScript | ExpressJS | VueJS | Jest | Redis | Git | JSON
-									</li>
-								</ul>
-							</div>
-						</div>
-					</li>
-				</ul>
-				<div id="show-resume" style="display: none;">
-					<ul class="timeline">
-						<li class="timeline-inverted">
-							<img class="timeline-badge info img-responsive" src="img/resume/talix.png">
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h4 class="timeline-title">Talix</h4>
-									<h5>Hybrid – based in San Francisco, California, USA</h5>
-									<h6 class="timeline-title">September 2018 to August 2019</h6>
-								</div>
-								<div class="timeline-body">
-									<p><u>Role</u>: Software Engineer</p>
-									<ul>
-										<li>
-											<u>Health Care/Medical Industry</u>: worked on back-end development in Java to enhance and maintain a medical text analysis tool designed to identify and extract medical concepts from clinical text.
-										</li>
-										<li>
-											Increased the accuracy of the recognition of medical concepts by 5% by implementing an alpha sort algorithm for concepts within 5 to 7 words.
-										</li>
-										<li>
-											Implemented algorithms to recognize special characters, increasing the precision recognition of medical concepts by 3%.
-										</li>
-										<br>
-										<li>
-											<u>Technologies involved</u>: Java 7 | JUnit | Apache OpenNLP | CVS | Oracle SQL | Tomcat
-										</li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li>
-							<img class="timeline-badge info img-responsive" src="img/resume/infosys.png">
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h4 class="timeline-title">Infosys</h4>
-									<h5>Sunnyvale, California, USA</h5>
-									<h6 class="timeline-title">June 2017 to September 2018</h6>
-								</div>
-								<div class="timeline-body">
-									<img class="timeline-content-single-image-top-right info img-responsive" src="img/resume/apple.png">
-									<p><u>Role</u>: Technology Analyst</p>
-									<ul>
-										<li>
-											Developed a Java-based RESTful microservice to act as middleware between internal systems, enabling reliable and scalable communication. Optimized data transformation logic, reducing response latency by 30% and improving system integration performance.
-										</li>
-										<br>
-										<li>
-											<u>Technologies involved</u>:  Java 8 | REST | Maven | JSON | JUnit 4 | Mockito | Git | Tomcat
-										</li>
-									</ul>
-									<br>
-									<p><u>Client</u>: Apple</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted">
-							<img class="timeline-badge info img-responsive" src="img/resume/mexico.png">
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h4 class="timeline-title">IT Consulting</h4>
-									<h5>Mexico</h5>
-									<h6 class="timeline-title">January 2015 to May 2017</h6>
-								</div>
-								<div class="timeline-body">
-									<p><u>Role</u>: Software Developer</p>
-									<ul>
-										<li>
-											Worked with leading consultancies on projects for General Electric, USAA, and Charter.
-										</li>
-										<li>
-											Contributed to back-end Java development including migration of desktop applications to web, RESTful web service design, and process improvements that enhanced user experience.
-										</li>
-										<li>
-											Led small teams, conducted code reviews, created unit and integration tests, and provided Java training for interns. Collaborated effectively with remote teams to deliver high-quality solutions on time.
-										</li>
-										<br>
-										<li>
-											<u>Technologies involved</u>: Java | Spring MVC | Spring Boot | REST | Hibernate | Maven | JUnit | Mockito | Selenium | Git | Oracle SQL | MySQL | SonarQube | Jenkins
-										</li>
-									</ul>
-									<br>
-									<p><u>Clients</u>: Charter | USAA | General Electric</p>
-									<img class="timeline-content-image-bottom info img-responsive" src="img/resume/charter.png">
-									<img class="timeline-content-image-bottom info img-responsive" src="img/resume/usaa.png">
-									<img class="timeline-content-image-bottom info img-responsive" src="img/resume/ge.png">
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="container-center ">
-					<h5 class="mb-0">
-						<button class="btn btn-link" id="show-button" type="button" onclick="showHideResume()">
-							Show more...
-						</button>
-					</h5>
-				</div>
-			</div>
-	    </div>
+<!-- ========================================== -->
+<!-- ========= SECTION: RESUME ================ -->
+<!-- ========================================== -->
+<a id="resume"></a>
+<div class="content-section-b">
+    <div class="container">
+        <div class="page-header">
+            <h1 id="timeline">Resume</h1>
+            <a href="resources/AlanQuintero.pdf" download="Alan Quintero.pdf" class="btn btn-info btn-lg">
+                <i class="fa-solid fa-download"></i>&nbsp;&nbsp;Download Resume
+            </a>
+        </div>
+        <ul class="timeline">
+            <li>
+                <img class="timeline-badge info img-responsive" src="img/resume/meta.png" alt="Meta logo">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">Meta</h4>
+                        <h5>Remote -<br/>based in Menlo Park, California, USA</h5>
+                        <h6 class="timeline-title">November 2020 to April 2025</h6>
+                    </div>
+                    <div class="timeline-body">
+                        <img class="timeline-content-images-top-right info img-responsive"
+                             src="img/resume/meta-projects.png" alt="Meta products">
+                        <p><u>Role</u>: Software Engineer</p>
+                        <ul>
+                            <li>
+                                Designed and implemented the Android UI for Facebook posts in the Friends tab of
+                                Messenger, contributing to a 10% increase in user time spent in the app.
+                            </li>
+                            <li>
+                                Developed the Android messaging infrastructure necessary to support Meta AI on WhatsApp.
+                            </li>
+                            <li>
+                                Conducted A/B testing to analyze and optimize WhatsApp message send times, achieving a
+                                20% improvement through parallelism, caching, and code enhancements—supporting the
+                                increase in group participants from 256 to 1024.
+                            </li>
+                            <br/>
+                            <li>
+                                <u>Technologies involved</u>: Android | Java 10 | Kotlin | JUnit | Espresso | Git
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <img class="timeline-badge info img-responsive" src="img/resume/bind.png" alt="Bind logo">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">Bind On-Demand Health Insurance</h4>
+                        <h5>Remote – based in San Francisco, California, USA</h5>
+                        <h6 class="timeline-title">May 2020 to October 2020</h6>
+                    </div>
+                    <div class="timeline-body">
+                        <p><u>Role</u>: Software Engineer</p>
+                        <ul>
+                            <li>
+                                <u>Health Insurance Industry</u>: worked on the claims system implementing new
+                                functionality and fixed bugs in the back-end, reducing the bugs reported by sonarQube by
+                                85%.
+                            </li>
+                            <li>
+                                Contributed to the integration, automation, and documentation of a claim process that
+                                uses a .NET vendor application.
+                            </li>
+                            <br>
+                            <li>
+                                <u>Technologies involved</u>: Java 11 | Spring Boot | Gradle | AWS | JUnit 4 | Jenkins |
+                                Sumo Logic | Git | SonarQube
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img class="timeline-badge info img-responsive" src="img/resume/zume.png" alt="Zume logo">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">Zume</h4>
+                        <h5>Mountain View, California, USA</h5>
+                        <h6 class="timeline-title">September 2019 to March 2020</h6>
+                    </div>
+                    <div class="timeline-body">
+                        <p><u>Role</u>: Software Engineer</p>
+                        <ul>
+                            <li>
+                                <u>Food Industry</u>: worked on the back-end development to implement REST microservices
+                                and worked on the front-end to create an internal web application. Created a web
+                                application using Vue.js to present demos to potential clients in order to show the
+                                customer food pickup experience.
+                            </li>
+                            <br>
+                            <li>
+                                <u>Technologies involved</u>: TypeScript / JavaScript | Express.js | Vue.js | Jest |
+                                Redis | Git | JSON
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div id="show-resume">
+            <ul class="timeline">
+                <li class="timeline-inverted">
+                    <img class="timeline-badge info img-responsive" src="img/resume/talix.png" alt="Talix logo">
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Talix</h4>
+                            <h5>Hybrid – based in San Francisco, California, USA</h5>
+                            <h6 class="timeline-title">September 2018 to August 2019</h6>
+                        </div>
+                        <div class="timeline-body">
+                            <p><u>Role</u>: Software Engineer</p>
+                            <ul>
+                                <li>
+                                    <u>Health Care/Medical Industry</u>: worked on back-end development in Java to
+                                    enhance and maintain a medical text analysis tool designed to identify and extract
+                                    medical concepts from clinical text.
+                                </li>
+                                <li>
+                                    Increased the accuracy of the recognition of medical concepts by 5% by implementing
+                                    an alpha sort algorithm for concepts within 5 to 7 words.
+                                </li>
+                                <li>
+                                    Implemented algorithms to recognize special characters, increasing the precision
+                                    recognition of medical concepts by 3%.
+                                </li>
+                                <br>
+                                <li>
+                                    <u>Technologies involved</u>: Java 7 | JUnit | Apache OpenNLP | CVS | Oracle SQL |
+                                    Tomcat
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img class="timeline-badge info img-responsive" src="img/resume/infosys.png" alt="Infosys logo">
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Infosys</h4>
+                            <h5>Sunnyvale, California, USA</h5>
+                            <h6 class="timeline-title">June 2017 to September 2018</h6>
+                        </div>
+                        <div class="timeline-body">
+                            <img class="timeline-content-single-image-top-right info img-responsive"
+                                 src="img/resume/apple.png" alt="Apple logo">
+                            <p><u>Role</u>: Technology Analyst</p>
+                            <ul>
+                                <li>
+                                    Developed a Java-based RESTful microservice to act as middleware between internal
+                                    systems, enabling reliable and scalable communication. Optimized data transformation
+                                    logic, reducing response latency by 30% and improving system integration
+                                    performance.
+                                </li>
+                                <br>
+                                <li>
+                                    <u>Technologies involved</u>: Java 8 | REST | Maven | JSON | JUnit 4 | Mockito | Git
+                                    | Tomcat
+                                </li>
+                            </ul>
+                            <br>
+                            <p><u>Client</u>: Apple</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <img class="timeline-badge info img-responsive" src="img/resume/mexico.png" alt="Mexico logo">
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">IT Consulting</h4>
+                            <h5>Mexico</h5>
+                            <h6 class="timeline-title">January 2015 to May 2017</h6>
+                        </div>
+                        <div class="timeline-body">
+                            <p><u>Role</u>: Software Developer</p>
+                            <ul>
+                                <li>
+                                    Worked with leading consultancies on projects for General Electric, USAA, and
+                                    Charter.
+                                </li>
+                                <li>
+                                    Contributed to back-end Java development including migration of desktop applications
+                                    to web, RESTful web service design, and process improvements that enhanced user
+                                    experience.
+                                </li>
+                                <li>
+                                    Led small teams, conducted code reviews, created unit and integration tests, and
+                                    provided Java training for interns. Collaborated effectively with remote teams to
+                                    deliver high-quality solutions on time.
+                                </li>
+                                <br>
+                                <li>
+                                    <u>Technologies involved</u>: Java | Spring MVC | Spring Boot | REST | Hibernate |
+                                    Maven | JUnit | Mockito | Selenium | Git | Oracle SQL | MySQL | SonarQube | Jenkins
+                                </li>
+                            </ul>
+                            <br>
+                            <p><u>Clients</u>: Charter | USAA | General Electric</p>
+                            <img class="timeline-content-image-bottom info img-responsive" src="img/resume/charter.png"
+                                 alt="Charter logo">
+                            <img class="timeline-content-image-bottom info img-responsive" src="img/resume/usaa.png"
+                                 alt="USAA logo">
+                            <img class="timeline-content-image-bottom info img-responsive" src="img/resume/ge.png"
+                                 alt="GE logo">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container-center ">
+            <h5 class="mb-0">
+                <button class="btn btn-link" id="show-button" type="button" onclick="showHideResume()">
+                    Show more...
+                </button>
+            </h5>
+        </div>
+    </div>
+</div>
 
-	    <!-- ========================================== -->
-		<!-- ========= SECTION: SKILLS ================ -->
-		<!-- ========================================== -->
-	    <a name="skills"></a>
-	    <div class="content-section-a light-mode">
-			<div class="container">
-				<div>
-					<h1>Skills</h1>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-3 col-lg-offset-2 col-sm-5">
-							<strong><u>Back-end</u></strong>
-							<p>Java | Spring Framework | RESTful Microservices | Hibernate| JDBC</p>
-							<br/>
-							<strong><u>Mobile Development</u></strong>
-							<p>Android (Kotlin | Java)</p>
-							<br/>
-							<strong><u>Application Servers</u></strong>
-							<p>Apache Tomcat | Jetty | Docker</p>
-							<br/>
-							<strong><u>Operating Systems</u></strong>
-							<p>Windows | Linux | MacOS</p>
-						</div>
-						<div class="col-lg-3 col-sm-5">
-							<strong><u>Front-end</u></strong>
-							<p>JavaScript | VueJS | TypeScript | ExpressJS | Bootstrap | HTML5 | CSS3 | AJAX</p>
-							<br/>
-							<strong><u>Cloud Platform</u><strong>
-							<p>Heroku | AWS</p>
-							<br/>
-							<strong><u>Methodologies</u><strong>
-							<p>Agile | Scrum</p>
-							<br/>
-							<strong><u>Languages</u></strong>
-							<p>English:​ Advanced <br/> Spanish: Native</p>
-						</div>
-						<div class="col-lg-3 col-sm-5">
-							<strong><u>Testing</u></strong>
-							<p>JUnit | Mockito | Selenium | Jest | Espresso</p>
-							<br/>
-							<strong><u>Database and Storage</u></strong>
-							<p>MySQL | Oracle PL/SQL | Redis</p>
-							<br/>
-							<strong><u>Others</u></strong>
-							<p>JSON | Git | Maven | Jenkins | SonarQube | Swagger | Google Checkstyle | Jira</p>
-							<br/>
-							<strong><u>IDE</u></strong>
-							<p>Eclipse | Netbeans | Spring Tool Suite | Android Studio | WebStorm</p>
-						</div>
-					</div>
-				</div>
-			</div>
-	    </div>
+<!-- ========================================== -->
+<!-- ========= SECTION: SKILLS ================ -->
+<!-- ========================================== -->
+<a id="skills"></a>
+<div class="content-section-a light-mode">
+    <div class="container">
+        <div>
+            <h1>Skills</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-2 col-sm-5">
+                    <strong><u>Back-end</u></strong>
+                    <p>Java | Spring Framework | RESTful Microservices | Hibernate| JDBC</p>
+                    <br/>
+                    <strong><u>Mobile Development</u></strong>
+                    <p>Android (Kotlin | Java)</p>
+                    <br/>
+                    <strong><u>Application Servers</u></strong>
+                    <p>Apache Tomcat | Jetty | Docker</p>
+                    <br/>
+                    <strong><u>Operating Systems</u></strong>
+                    <p>Windows | Linux | MacOS</p>
+                </div>
+                <div class="col-lg-3 col-sm-5">
+                    <strong><u>Front-end</u></strong>
+                    <p>JavaScript | VueJS | TypeScript | ExpressJS | Bootstrap | HTML5 | CSS3 | AJAX</p>
+                    <br/>
+                    <strong><u>Cloud Platform</u></strong>
+                    <p>Heroku | AWS</p>
+                    <br/>
+                    <strong><u>Methodologies</u></strong>
+                    <p>Agile | Scrum</p>
+                    <br/>
+                    <strong><u>Languages</u></strong>
+                    <p>English:​ Advanced <br/> Spanish: Native</p>
+                </div>
+                <div class="col-lg-3 col-sm-5">
+                    <strong><u>Testing</u></strong>
+                    <p>JUnit | Mockito | Selenium | Jest | Espresso</p>
+                    <br/>
+                    <strong><u>Database and Storage</u></strong>
+                    <p>MySQL | Oracle PL/SQL | Redis</p>
+                    <br/>
+                    <strong><u>Others</u></strong>
+                    <p>JSON | Git | Maven | Jenkins | SonarQube | Swagger | Google Checkstyle | Jira</p>
+                    <br/>
+                    <strong><u>IDE</u></strong>
+                    <p>Eclipse | Netbeans | Spring Tool Suite | Android Studio | WebStorm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-		<!-- ============================================= -->
-		<!-- ========= SECTION: EDUCATION ================ -->
-		<!-- ============================================= -->
-	    <a name="education"></a>
-	    <div class="content-section-b">
-			<div class="container">
-				<div class="page-header">
-					<h1 id="timeline">Education</h1>
-				</div>
-				<div class="container">
-					<ul class="timeline">
-						<li>
-							<img class="timeline-badge info img-responsive" src="img/education/uaa.png">
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-								  <h3 class="timeline-title">Bachelor's Degree</h3>
-								  <h4>Universidad Autonoma de Aguascalientes</h4>
-								  <h5>Aguascalientes, Mexico</h5>
-								  <h6 class="timeline-title">August 2010 to December 2014</h6>
-								</div>
-								<div class="timeline-body">
-									<h3>B.S. in Computer Systems Engineering</h3>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-	    </div>
+<!-- ============================================= -->
+<!-- ========= SECTION: EDUCATION ================ -->
+<!-- ============================================= -->
+<a id="education"></a>
+<div class="content-section-b">
+    <div class="container">
+        <div class="page-header">
+            <h1>Education</h1>
+        </div>
+        <div class="container">
+            <ul class="timeline">
+                <li>
+                    <img class="timeline-badge info img-responsive" src="img/education/uaa.png" alt="UAA logo">
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h3 class="timeline-title">Bachelor's Degree</h3>
+                            <h4>Universidad Autonoma de Aguascalientes</h4>
+                            <h5>Aguascalientes, Mexico</h5>
+                            <h6 class="timeline-title">August 2010 to December 2014</h6>
+                        </div>
+                        <div class="timeline-body">
+                            <h3>B.S. in Computer Systems Engineering</h3>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-		<!-- Certifications -->
-	    <a  name="certifications"></a>
-	    <div class="content-section-a light-mode">
-			<div class="container">
-				<div>
-					<h1>Certifications</h1>
-				</div>
-				<div class="container">
-				  <div class="row g-3">
-					  <div class="col-6 col-md-4 mb-3 spacing-mobile">
-					    <img src="img/certifications/android.jpg" class="img-fluid rounded clickable-img">
-					  </div>
-					  <div class="col-6 col-md-4 mb-3 spacing-mobile">
-					    <img src="img/certifications/java6.jpg" class="img-fluid rounded clickable-img">
-					  </div>
-					</div>
-				</div>
-			</div>
-	    </div>
+<!-- Certifications -->
+<a id="certifications"></a>
+<div class="content-section-a light-mode">
+    <div class="container">
+        <div>
+            <h1>Certifications</h1>
+        </div>
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-6 col-md-4 mb-3 spacing-mobile">
+                    <img src="img/certifications/android.jpg" class="img-fluid rounded clickable-img"
+                         alt="Android certification">
+                </div>
+                <div class="col-6 col-md-4 mb-3 spacing-mobile">
+                    <img src="img/certifications/java6.jpg" class="img-fluid rounded clickable-img"
+                         alt="Java 6 certification">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-		<!-- =========================================== -->
-		<!-- ========= SECTION: AWARDS ================ -->
-		<!-- =========================================== -->
-	 	<a name="awards"></a>
-		<div class="content-section-b">
-		  <div class="container">
-		    <div>
-		      <h1>Awards</h1>
-		    </div>
-		    <div class="container">
-		      <div class="row g-3">
-		        <div class="col-6 col-md-4 mb-3 spacing-mobile">
-		          <img src="img/awards/award3.jpg" class="img-fluid rounded clickable-img">
-		        </div>
-		        <div class="col-6 col-md-4 mb-3 spacing-mobile">
-		          <img src="img/awards/award2.jpg" class="img-fluid rounded clickable-img">
-		        </div>
-		        <div class="col-6 col-md-4 mb-3 spacing-mobile">
-		          <img src="img/awards/award1.jpg" class="img-fluid rounded clickable-img">
-		        </div>
-		      </div>
-		    </div>
-		  </div>
-		</div>
+<!-- =========================================== -->
+<!-- ========= SECTION: AWARDS ================ -->
+<!-- =========================================== -->
+<a id="awards"></a>
+<div class="content-section-b">
+    <div class="container">
+        <div>
+            <h1>Awards</h1>
+        </div>
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-6 col-md-4 mb-3 spacing-mobile">
+                    <img src="img/awards/award3.jpg" class="img-fluid rounded clickable-img" alt="Award image">
+                </div>
+                <div class="col-6 col-md-4 mb-3 spacing-mobile">
+                    <img src="img/awards/award2.jpg" class="img-fluid rounded clickable-img" alt="Award image">
+                </div>
+                <div class="col-6 col-md-4 mb-3 spacing-mobile">
+                    <img src="img/awards/award1.jpg" class="img-fluid rounded clickable-img" alt="Award image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-	   <!-- Modal to expand the image when click on it -->
-		<div id="imageModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999;">
-		  <img id="modalImage" src="" style="max-width:90%; max-height:90%; border-radius:10px;">
-		</div>
+<!-- Modal to expand the image when click on it -->
+<div id="imageModalContainer">
+    <img id="imageModal" src="" alt="">
+</div>
 
-		<!-- ============================================ -->
-		<!-- ========= SECTION: PROJECTS ================ -->
-		<!-- ============================================ -->
-		<a name="projects"></a>
-		<div class="content-section-a light-mode">
-			<div class="container">
-				<div>
-					<h1>Projects</h1>
-				</div>
-				<div id="projectsCarousel" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#projectsCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#projectsCarousel" data-slide-to="1"></li>
-						<li data-target="#projectsCarousel" data-slide-to="2"></li>
-						<li data-target="#projectsCarousel" data-slide-to="3"></li>
-					</ol>
-					<div class="carousel-inner">
-						<!-- Project 1 -->
-						<div class="item active">
-							<div class="container">
-								<div class="row">
-									<div class="col-lg-5 col-lg-offset-2 col-sm-6">
-										<div class="clearfix"></div>
-										<h2 class="section-heading">Read Mode - Android App</h2>
-										<p class="lead">Developed an Android application to control screen brightness on older devices lacking built-in support for this functionality.</p>
-										<p class="lead">Helped over 10000+ users improve their reading experience on older Android devices.</p>
-										<p>Try it: <a href="https://play.google.com/store/apps/details?id=autonightmode.mx.com.alanquintero.autonightmode" target="_blank">Read Mode - Android App</a></p>
-										<a href="https://github.com/alanquintero/readmode" target="_blank" class="btn btn-default btn-lg"><i class="fa-brands fa-github fa-fw"></i> <span class="network-name">Read Mode - Android App</span></a>
-									</div>
-									<br/>
-									<div class="col-lg-5 col-sm-6">
-										<img class="img-responsive" src="img/projects/read-mode.jpg">
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Project 2 -->
-						<div class="item">
-							<div class="container">
-								<div class="row">
-									<div class="col-lg-5 col-lg-offset-2 col-sm-6">
-										<div class="clearfix"></div>
-										<h2 class="section-heading">Oscar's Expert Tree Service</h2>
-										<p class="lead">Designed and developed a static website for a small business, improving their online presence and supporting business growth.</p>
-										<p>View project: <a href="http://oscarsexperttreeservice.com/" target="_blank">Oscar's Expert Tree Service</a></p>
-									</div>
-									<br/>
-									<div class="col-lg-5 col-sm-6">
-										<img class="img-responsive" src="img/projects/oscar.jpg">
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Project 3 -->
-						<div class="item">
-							<div class="container">
-								<div class="row">
-									<div class="col-lg-5 col-lg-offset-2 col-sm-6">
-										<div class="clearfix"></div>
-										<h2 class="section-heading">Google GeoChart</h2>
-										<p class="lead">Built a web app with Google GeoChart library to highlight U.S. regions and generate printable maps.</p>
-										<p>Live demo: <a href="https://1cd7f832.google-geochart.pages.dev/" target="_blank">Google GeoChart</a></p>
-										<a href="https://github.com/alanquintero/google-geochart" target="_blank" class="btn btn-default btn-lg"><i class="fa-brands fa-github fa-fw"></i> <span class="network-name">Google GeoChart</span></a>
-									</div>
-									<br/>
-									<div class="col-lg-5 col-sm-6">
-										<img class="img-responsive" src="img/projects/geochart.jpg">	
-									</div>
-								</div>
-							</div>
-						</div>
-			    		<!-- More Projects -->
-						<div class="item">
-							<div class="container">
-								<div class="row">
-									<div class="col-lg-5 col-lg-offset-2 col-sm-6">
-										<div class="clearfix"></div>
-										<h2 class="section-heading">More Projects...</h2>
-										<a href="https://github.com/alanquintero" target="_blank" class="btn btn-default btn-lg"><i class="fa-brands fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-									</div>
-									<br/>
-									<div class="col-lg-5 col-sm-6">
-										<img class="img-responsive" src="img/moreProjects-tmp.jpg?ver=1">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Carousel controls -->
-					<a class="left carousel-control" href="#projectsCarousel" data-slide="prev">
-						<i class="fa-solid fa-chevron-left"></i>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#projectsCarousel" data-slide="next">
-						<i class="fa-solid fa-chevron-right"></i>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>
-			</div>
-	    </div>
+<!-- ============================================ -->
+<!-- ========= SECTION: PROJECTS ================ -->
+<!-- ============================================ -->
+<a id="projects"></a>
+<div class="content-section-a light-mode">
+    <div class="container">
+        <div>
+            <h1>Projects</h1>
+        </div>
+        <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#projectsCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#projectsCarousel" data-slide-to="1"></li>
+                <li data-target="#projectsCarousel" data-slide-to="2"></li>
+                <li data-target="#projectsCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!-- Project 1 -->
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                                <div class="clearfix"></div>
+                                <h2 class="section-heading">Read Mode - Android App</h2>
+                                <p class="lead">Developed an Android application to control screen brightness on older
+                                    devices lacking built-in support for this functionality.</p>
+                                <p class="lead">Helped over 10000+ users improve their reading experience on older
+                                    Android devices.</p>
+                                <p>Try it: <a
+                                        href="https://play.google.com/store/apps/details?id=autonightmode.mx.com.alanquintero.autonightmode"
+                                        target="_blank">Read Mode - Android App</a></p>
+                                <a href="https://github.com/alanquintero/readmode" target="_blank"
+                                   class="btn btn-default btn-lg"><i class="fa-brands fa-github fa-fw"></i> <span
+                                        class="network-name">Read Mode - Android App</span></a>
+                            </div>
+                            <br/>
+                            <div class="col-lg-5 col-sm-6">
+                                <img class="img-responsive" src="img/projects/read-mode.jpg" alt="Read Mode project">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                                <div class="clearfix"></div>
+                                <h2 class="section-heading">Oscar's Expert Tree Service</h2>
+                                <p class="lead">Designed and developed a static website for a small business, improving
+                                    their online presence and supporting business growth.</p>
+                                <p>View project: <a href="http://oscarsexperttreeservice.com/" target="_blank">Oscar's
+                                    Expert Tree Service</a></p>
+                            </div>
+                            <br/>
+                            <div class="col-lg-5 col-sm-6">
+                                <img class="img-responsive" src="img/projects/oscar.jpg" alt="Oscar project">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                                <div class="clearfix"></div>
+                                <h2 class="section-heading">Google GeoChart</h2>
+                                <p class="lead">Built a web app with Google GeoChart library to highlight U.S. regions
+                                    and generate printable maps.</p>
+                                <p>Live demo: <a href="https://1cd7f832.google-geochart.pages.dev/" target="_blank">Google
+                                    GeoChart</a></p>
+                                <a href="https://github.com/alanquintero/google-geochart" target="_blank"
+                                   class="btn btn-default btn-lg"><i class="fa-brands fa-github fa-fw"></i> <span
+                                        class="network-name">Google GeoChart</span></a>
+                            </div>
+                            <br/>
+                            <div class="col-lg-5 col-sm-6">
+                                <img class="img-responsive" src="img/projects/geochart.jpg" alt="GeoChart project">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- More Projects -->
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                                <div class="clearfix"></div>
+                                <h2 class="section-heading">More Projects...</h2>
+                                <a href="https://github.com/alanquintero" target="_blank"
+                                   class="btn btn-default btn-lg"><i class="fa-brands fa-github fa-fw"></i> <span
+                                        class="network-name">Github</span></a>
+                            </div>
+                            <br/>
+                            <div class="col-lg-5 col-sm-6">
+                                <img class="img-responsive" src="img/moreProjects-tmp.jpg?ver=1"
+                                     alt="More Github projects">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel controls -->
+            <a class="left carousel-control" href="#projectsCarousel" data-slide="prev">
+                <i class="fa-solid fa-chevron-left"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#projectsCarousel" data-slide="next">
+                <i class="fa-solid fa-chevron-right"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
 
-		<!-- ================================================= -->
-		<!-- ========= SECTION: MORE ABOUT ME ================ -->
-		<!-- ================================================= -->
-	    <a name="moreabout"></a>
-	    <div class="content-section-b">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5 col-lg-offset-2 col-sm-6">
-						<hr class="section-heading-spacer">
-						<div class="clearfix"></div>
-						<h2 class="section-heading">More About Me</h2>
-						<p class="lead">I am a responsible, disciplined, and dedicated person who believes the key to success is to never stop learning. I love discovering something new every day and continue working step by step toward turning my dreams into reality.</p>
-						<p class="lead">In my free time, I enjoy reading books, exercising, watching movies occasionally, and traveling whenever I get the chance.</p>
-						<p class="lead"><u>My favorite quote:</u> <i>"Success is not about speed, but about steady and consistent effort."</i></p>
-					</div>
-					<div class="col-lg-5  col-sm-6">
-						<img class="img-responsive" src="img/more.jpg?ver=2" alt="" style="width:400px;height:320px;">
-					</div>
-				</div>
-			</div>
-	    </div>
+<!-- ================================================= -->
+<!-- ========= SECTION: MORE ABOUT ME ================ -->
+<!-- ================================================= -->
+<a id="moreabout"></a>
+<div class="content-section-b">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">More About Me</h2>
+                <p class="lead">I am a responsible, disciplined, and dedicated person who believes the key to success is
+                    to never stop learning. I love discovering something new every day and continue working step by step
+                    toward turning my dreams into reality.</p>
+                <p class="lead">In my free time, I enjoy reading books, exercising, watching movies occasionally, and
+                    traveling whenever I get the chance.</p>
+                <p class="lead"><u>My favorite quote:</u> <i>"Success is not about speed, but about steady and
+                    consistent effort."</i></p>
+            </div>
+            <div class="col-lg-5  col-sm-6">
+                <img class="img-responsive" src="img/more.jpg?ver=2" alt="" style="width:400px;height:320px;">
+            </div>
+        </div>
+    </div>
+</div>
 
-	    <!-- ========================================== -->
-		<!-- ========= SECTION: FOOTER ================ -->
-		<!-- ========================================== -->
-	    <footer id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<ul class="list-inline">
-							<li>
-								<a href="#">Home</a>
-							</li>
-							<li class="footer-menu-divider">&sdot;</li>
-							<li>
-								<a href="#about">About Me</a>
-							</li>
-							<li class="footer-menu-divider">&sdot;</li>
-							<li>
-								<a href="#resume">Resume</a>
-							</li>
-							<li class="footer-menu-divider">&sdot;</li>
-							<li>
-								<a href="#skills">Skills</a>
-							</li>
-							<li class="footer-menu-divider">&sdot;</li>
-							<li>
-								<a href="#education">Education</a>
-							</li>
-							<li class="footer-menu-divider">&sdot;</li>
-							<li>
-								<a href="#certifications">Certifications</a>
-							</li>
-							<li class="footer-menu-divider">&sdot;</li>
-							<li>
-								<a href="#awards">Awards</a>
-							</li>
-							<li class="footer-menu-divider">&sdot;</li>
-							<li>
-								<a href="#projects">Projects</a>
-							</li>
-							<li class="footer-menu-divider">&sdot;</li>
-							<li>
-								<a href="#moreabout">More About Me</a>
-							</li>
-							<li class="footer-menu-divider">&sdot;</li>
-						</ul>
-						<p class="copyright text-muted small">Copyright &copy; Alan Quintero. All Rights Reserved</p>
-					</div>
-				</div>
-			</div>
-	    </footer>
+<!-- ========================================== -->
+<!-- ========= SECTION: FOOTER ================ -->
+<!-- ========================================== -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#resume">Resume</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#certifications">Certifications</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#awards">Awards</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#moreabout">More About Me</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy; Alan Quintero. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
-		<script src="js/script.js?ver=2.3"></script>
-	    <!-- jQuery -->
-	    <script src="vendor/jquery-3.7.1.min.js"></script>
-	    <!-- Bootstrap Core JavaScript -->
-	    <script src="vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-	</body>
+<script src="js/script.js?ver=2.4"></script>
+<!-- jQuery -->
+<script src="vendor/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</body>
 </html>
