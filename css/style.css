@@ -15,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -41,14 +41,14 @@ h6 {
 }
 
 .page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .list-inline > li {
-   margin-top: 4px;
-   margin-bottom: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .clickable-img {
@@ -62,9 +62,9 @@ img {
 
 /* space line for mobile */
 @media (max-width: 767px) {
-  .spacing-mobile {
-    margin-bottom: 15px;
-  }
+    .spacing-mobile {
+        margin-bottom: 15px;
+    }
 }
 
 footer {
@@ -79,261 +79,6 @@ p.copyright {
     margin: 15px 0 0;
 }
 
-/* TIMELINE for Resume and Education starts */
-.timeline {
-    list-style: none;
-    padding: 20px 0 20px;
-    position: relative;
-}
-
-    .timeline:before {
-        top: 0;
-        bottom: 0;
-        position: absolute;
-        content: " ";
-        width: 3px;
-        background-color: #eeeeee;
-        left: 50%;
-        margin-left: -1.5px;
-    }
-
-    .timeline > li {
-        margin-bottom: 20px;
-        position: relative;
-    }
-
-        .timeline > li:before,
-        .timeline > li:after {
-            content: " ";
-            display: table;
-        }
-
-        .timeline > li:after {
-            clear: both;
-        }
-
-        .timeline > li:before,
-        .timeline > li:after {
-            content: " ";
-            display: table;
-        }
-
-        .timeline > li:after {
-            clear: both;
-        }
-
-        .timeline > li > .timeline-panel {
-            width: 46%;
-            float: left;
-            border: 1px solid #d4d4d4;
-            border-radius: 2px;
-            padding: 20px;
-            position: relative;
-            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-        }
-
-            .timeline > li > .timeline-panel:before {
-                position: absolute;
-                top: 26px;
-                right: -15px;
-                display: inline-block;
-                border-top: 15px solid transparent;
-                border-left: 15px solid #ccc;
-                border-right: 0 solid #ccc;
-                border-bottom: 15px solid transparent;
-                content: " ";
-            }
-
-            .timeline > li > .timeline-panel:after {
-                position: absolute;
-                top: 27px;
-                right: -14px;
-                display: inline-block;
-                border-top: 14px solid transparent;
-                border-left: 14px solid #fff;
-                border-right: 0 solid #fff;
-                border-bottom: 14px solid transparent;
-                content: " ";
-            }
-
-        .timeline > li > .timeline-badge {
-            color: #fff;
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
-            font-size: 1.4em;
-            text-align: center;
-            position: absolute;
-            top: 16px;
-            left: 50%;
-            margin-left: -25px;
-            background-color: #ffffff;
-            z-index: 100;
-            border-top-right-radius: 50%;
-            border-top-left-radius: 50%;
-            border-bottom-right-radius: 50%;
-            border-bottom-left-radius: 50%;
-            border-radius: 50%;
-            padding: 2px;
-            border: 2px solid #000;
-        }
-
-        .timeline-content-images-top-right {
-            color: #fff;
-            width: 90px;
-            height: 50px;
-            line-height: 50px;
-            font-size: 1.4em;
-            text-align: center;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            margin-left: -25px;
-            z-index: 100;
-        }
-
-        .timeline-content-single-image-top-right {
-            color: #fff;
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
-            font-size: 1.4em;
-            text-align: center;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            margin-left: -25px;
-            background-color: #ffffff;
-            z-index: 100;
-            border-top-right-radius: 50%;
-            border-top-left-radius: 50%;
-            border-bottom-right-radius: 50%;
-            border-bottom-left-radius: 50%;
-            border-radius: 50%;
-            padding: 2px;
-            border: 2px solid #000;
-        }
-
-        .timeline-content-image-top-left {
-            color: #fff;
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
-            font-size: 1.4em;
-            text-align: center;
-            position: absolute;
-            background-color: #ffffff;
-            top: 10px;
-            right: 70px;
-            margin-left: -25px;
-            z-index: 100;
-            border-top-right-radius: 50%;
-            border-top-left-radius: 50%;
-            border-bottom-right-radius: 50%;
-            border-bottom-left-radius: 50%;
-            border-radius: 50%;
-            padding: 2px;
-            border: 2px solid #000;
-        }
-
-        .timeline-content-image-bottom {
-            color: #fff;
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
-            font-size: 1.4em;
-            text-align: center;
-            background-color: #ffffff;
-            z-index: 100;
-            border-radius: 50%;
-            padding: 2px;
-            border: 2px solid #000;
-
-            /* Ensure the images stay in a horizontal row */
-            display: inline-block;  
-
-            /* Space between each image */
-            margin-right: 5px;      
-
-            /* Align images vertically in the middle if next to text */
-            vertical-align: middle; 
-        }
-
-        .timeline > li.timeline-inverted > .timeline-panel {
-            float: right;
-        }
-
-            .timeline > li.timeline-inverted > .timeline-panel:before {
-                border-left-width: 0;
-                border-right-width: 15px;
-                left: -15px;
-                right: auto;
-            }
-
-            .timeline > li.timeline-inverted > .timeline-panel:after {
-                border-left-width: 0;
-                border-right-width: 14px;
-                left: -14px;
-                right: auto;
-            }
-
-
-.timeline-badge.info {
-    background-color: #EDF5FF !important;
-}
-
-.timeline-title {
-    margin-top: 0;
-    color: inherit;
-}
-
-.timeline-body > p,
-.timeline-body > ul {
-    margin-bottom: 0;
-}
-
-    .timeline-body > p + p {
-        margin-top: 5px;
-    }
-
-@media (max-width: 767px) {
-    ul.timeline:before {
-        left: 40px;
-    }
-
-    ul.timeline > li > .timeline-panel {
-        width: calc(100% - 90px);
-        width: -moz-calc(100% - 90px);
-        width: -webkit-calc(100% - 90px);
-    }
-
-    ul.timeline > li > .timeline-badge {
-        left: 15px;
-        margin-left: 0;
-        top: 16px;
-    }
-
-    ul.timeline > li > .timeline-panel {
-        float: right;
-    }
-
-        ul.timeline > li > .timeline-panel:before {
-            border-left-width: 0;
-            border-right-width: 15px;
-            left: -15px;
-            right: auto;
-        }
-
-        ul.timeline > li > .timeline-panel:after {
-            border-left-width: 0;
-            border-right-width: 14px;
-            left: -14px;
-            right: auto;
-        }
-}
-/* TIMELINE for Resume and Education ends */
-
 
 /**
  ***** NAVIGATION *****
@@ -344,64 +89,64 @@ p.copyright {
 }
 
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 30px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
 }
 
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 /* Slider */
 .slider {
-  position: absolute;
-  cursor: pointer;
-  background-color: #ccc;
-  border-radius: 30px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: 0.4s;
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 2px;
-  bottom: 2px;
-  background-color: white;
-  border-radius: 50%;
-  transition: 0.4s;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
 }
 
 /* Move the circle when checked */
 input:checked + .slider:before {
-  transform: translateX(30px);
+    transform: translateX(30px);
 }
 
 /* Sun and Moon icons */
 .icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 16px;
-  pointer-events: none;
-  user-select: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    user-select: none;
 }
 
 .icon.sun {
-  left: 8px;
+    left: 8px;
 }
 
 .icon.moon {
-  right: 8px;
+    right: 8px;
 }
 
 
@@ -424,7 +169,7 @@ input:checked + .slider:before {
     padding-bottom: 50px;
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     .intro-message {
         padding-bottom: 15%;
     }
@@ -451,9 +196,9 @@ input:checked + .slider:before {
 }
 
 .contact-details {
-  border: 2px solid #000;
-  border-radius: 5px;
-  padding: 15px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 15px;
 }
 
 
@@ -486,87 +231,333 @@ input:checked + .slider:before {
 */
 
 .navbar-light-style {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
 }
 
 nav.navbar-light-style a:hover {
-  background-color: #D0D0D0;
+    background-color: #D0D0D0;
 }
 
 .navbar-dark-style {
-  background-color: #222;
-  border-color: #080808;
+    background-color: #222;
+    border-color: #080808;
 }
 
 nav.navbar-dark-style a:hover {
-  background-color: #f8f8f8;
+    background-color: #f8f8f8;
 }
 
 /* The switch - the box around the slider */
 .switch {
-  position: relative;
-  display: inline-block;
-  top: 3px;
-  width: 60px;
-  height: 34px;
+    position: relative;
+    display: inline-block;
+    top: 3px;
+    width: 60px;
+    height: 34px;
 }
 
 /* Hide default HTML checkbox */
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 /* The slider */
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+    background-color: #2196F3;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #2196F3;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+    transform: translateX(26px);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+    border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 /**
  ***** Dark/Light Mode ends *****
 */
+
+
+/* TIMELINE for Resume and Education starts */
+.timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+}
+
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #eeeeee;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+.timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline > li:after {
+    clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline > li:after {
+    clear: both;
+}
+
+.timeline > li > .timeline-panel {
+    width: 46%;
+    float: left;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.timeline > li > .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+}
+
+.timeline > li > .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+.timeline > li > .timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #ffffff;
+    z-index: 100;
+    padding: 2px;
+    border: 2px solid #000;
+}
+
+.timeline-content-images-top-right {
+    color: #fff;
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-left: -25px;
+    z-index: 100;
+}
+
+.timeline-content-single-image-top-right {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-left: -25px;
+    background-color: #ffffff;
+    z-index: 100;
+    padding: 2px;
+    border: 2px solid #000;
+}
+
+.timeline-content-image-top-left {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    background-color: #ffffff;
+    top: 10px;
+    right: 70px;
+    margin-left: -25px;
+    z-index: 100;
+    padding: 2px;
+    border: 2px solid #000;
+}
+
+.timeline > li > .timeline-badge,
+.timeline-content-single-image-top-right,
+.timeline-content-image-top-left{
+    border-radius: 50%;
+}
+
+.timeline-content-image-bottom {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    background-color: #ffffff;
+    z-index: 100;
+    border-radius: 50%;
+    padding: 2px;
+    border: 2px solid #000;
+
+    /* Ensure the images stay in a horizontal row */
+    display: inline-block;
+
+    /* Space between each image */
+    margin-right: 5px;
+
+    /* Align images vertically in the middle if next to text */
+    vertical-align: middle;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+
+.timeline-badge.info {
+    background-color: #EDF5FF !important;
+}
+
+.timeline-title {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+    margin-bottom: 0;
+}
+
+.timeline-body > p + p {
+    margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+    ul.timeline:before {
+        left: 40px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        width: calc(100% - 90px);
+        width: -moz-calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+    }
+
+    ul.timeline > li > .timeline-badge {
+        left: 15px;
+        margin-left: 0;
+        top: 16px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        float: right;
+    }
+
+    ul.timeline > li > .timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+
+    ul.timeline > li > .timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+    }
+}
+
+/* TIMELINE for Resume and Education ends */
