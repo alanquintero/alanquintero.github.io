@@ -193,16 +193,17 @@ async function copyToClipboard() {
  * @function
  */
 function showHideResume() {
-    let show = document.getElementById("show-resume");
-    let btn = document.getElementById("show-button");
-    if (show.style.display === "none") {
+    let showResume = document.getElementById("show-resume");
+    let currentDisplay = window.getComputedStyle(showResume).display;
+    let showResumeButton = document.getElementById("show-button");
+    if (currentDisplay === "none") {
         // Hides part of the resume
-        show.style.display = "block";
-        btn.innerHTML = 'Show less...';
+        showResume.style.display = "block";
+        showResumeButton.innerHTML = 'Show less...';
     } else {
         // Shows the whole resume
-        show.style.display = "none";
-        btn.innerHTML = 'Show more...';
+        showResume.style.display = "none";
+        showResumeButton.innerHTML = 'Show more...';
         window.location.href = "#resume";
     }
 }
