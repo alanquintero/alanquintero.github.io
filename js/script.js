@@ -56,6 +56,13 @@ function enableDarkMode() {
     navbar.classList.remove("navbar-light-style");
     navbar.classList.add("navbar-dark-style");
 
+    // border of images
+    const thumbnails = document.querySelectorAll(".adaptive-thumbnail");
+    thumbnails.forEach(img => {
+        img.style.border = "2px solid #fff"; // light border
+        img.style.backgroundColor = "#212529"; // dark gray background
+    });
+
     // footer
     const footer = document.getElementById("footer");
     footer.style.backgroundColor = darkModeBackgroundColorSectionA;
@@ -107,6 +114,13 @@ function enableLightMode() {
         elements[i].style.backgroundColor = lightModeBackgroundColorSectionA;
         elements[i].style.color = lightModeColor;
     }
+
+    // border of images
+    const thumbnails = document.querySelectorAll(".adaptive-thumbnail");
+    thumbnails.forEach(img => {
+        img.style.border = "2px solid #333"; // dark border
+        img.style.backgroundColor = "#f8f9fa"; // light gray background
+    });
 
     // navbar
     const navbar = document.getElementById("navbar");
