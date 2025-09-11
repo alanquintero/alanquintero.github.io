@@ -250,6 +250,30 @@ input:checked + .slider:before {
 
 
 /**
+ ***** MORE ABOUT ME *****
+*/
+
+.more-about-img {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    z-index: 100;
+
+    /* Ensure the images stay in a horizontal row */
+    display: inline-block;
+
+    /* Space between each image */
+    margin-right: 5px;
+
+    /* Align images vertically in the middle if next to text */
+    vertical-align: middle;
+}
+
+
+/**
  ***** Dark/Light Mode starts *****
 */
 
