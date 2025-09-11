@@ -137,9 +137,12 @@
 <div class="content-section-a light-mode">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                <img class="img-responsive" src="img/profile.jpg?ver=2" alt="" style="width:264px;height:380px;">
+            <!-- Profile Image -->
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6 text-center">
+                <img id="profileImg" class="img-responsive" src="img/aboutMe/profile-lightMode.jpg" alt="" style="width:380px;height:420px;">
             </div>
+
+            <!-- About Me -->
             <div class="col-lg-5 col-sm-6">
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
@@ -150,32 +153,31 @@
                     efficient solutions. I’m committed to continuous learning and believe every experience helps us grow
                     into better versions of ourselves.</p>
                 <p class="lead"><u>Work authorization</u>: U.S. citizenship</p>
-                <div class="col-lg-5 col-sm-6">
+                <div class="col-lg-5 col-sm-6 p-0">
                     <a href="resources/AlanQuintero.pdf" download="Alan Quintero.pdf" class="btn btn-info btn-lg">
                         <i class="fa-solid fa-download"></i>&nbsp;&nbsp;Download Resume
                     </a>
                 </div>
             </div>
-            <br/><br/>
-            <div class="col-lg-5 col-sm-6 contact-details">
+        </div>
+        <br/>
+
+        <!-- Contact Details (below photo & About Me) -->
+        <div class="row mt-5 contact-details">
+            <div class="col-lg-12 text-center">
                 <u>Contact Details</u>
-                <br/>
-                <ul class="list-inline">
-                    <li>
-                        <i class="fa-solid fa-envelope fa-fw"></i>
-                        <a id="email-link" href="mailto:alanq.swe@outlook.com">alanq.swe@outlook.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <button type="button" id="copy" class="btn btn-primary btn-xs pull-right"
-                                onclick="copyToClipboard();">Copy email
-                        </button>
-                    </li>
-                    <br/>
+                <ul class="list-inline mt-2">
                     <li>
                         <span class="fa-brands fa-square-linkedin fa-fw"></span>
                         <a href="https://www.linkedin.com/in/alan-quintero" target="_blank">in/alan-quintero</a>
                     </li>
-                    <br/>
                     <li>
-                        <i class="fa-solid fa-map-marker"></i>&nbsp;&nbsp;San Diego, CA, USA
+                       | <i class="fa-solid fa-map-marker"></i>&nbsp;&nbsp; San Diego, CA, USA |
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope fa-fw"></i>
+                        <a id="email-link" href="mailto:alanq.swe@outlook.com">alanq.swe@outlook.com</a>
+                        <button type="button" id="copy" class="btn btn-primary btn-xs ml-2" onclick="copyToClipboard();">Copy email</button>
                     </li>
                 </ul>
             </div>
@@ -731,7 +733,7 @@
     </div>
 </footer>
 
-<script src="js/script.js?ver=1.5"></script>
+<script src="js/script.js?ver=1.6"></script>
 <!-- jQuery -->
 <script src="vendor/jquery-3.7.1.min.js"></script>
 <!-- Bootstrap Core JavaScript -->

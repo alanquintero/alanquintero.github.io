@@ -38,6 +38,10 @@ function enableDarkMode() {
     const header = document.getElementById("intro-header");
     header.style.backgroundImage = "url(img/intro-bg-2.jpg)";
 
+    // About Me
+    const img = document.getElementById('profileImg');
+    img.src = 'img/aboutMe/profile-darkMode.jpg';
+
     // divs
     document.body.style.backgroundColor = darkModeBackgroundColor;
     document.body.style.color = darkModeColor;
@@ -89,6 +93,10 @@ function enableLightMode() {
     // intro header
     const header = document.getElementById("intro-header");
     header.style.backgroundImage = "url(img/intro-bg.jpg)";
+
+    // About Me
+    const img = document.getElementById('profileImg');
+    img.src = 'img/aboutMe/profile-lightMode.jpg';
 
     // divs
     document.body.style.backgroundColor = lightModeBackgroundColor;
