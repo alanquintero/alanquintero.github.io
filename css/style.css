@@ -186,6 +186,11 @@ input:checked + .slider:before {
     position: relative;
     padding-top: 180px;
     padding-bottom: 50px;
+    text-align: center;
+}
+
+.intro-message #headList {
+    margin-top: 70px; /* adjust this number for more/less spacing */
 }
 
 @media (max-width: 767px) {

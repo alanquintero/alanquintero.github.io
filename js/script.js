@@ -36,7 +36,7 @@ function enableDarkMode() {
     isDarkModeEnabled = true;
     // intro header
     const header = document.getElementById("intro-header");
-    header.style.backgroundImage = "url(img/intro-bg-2.jpg)";
+    header.style.backgroundImage = "url(img/banner/banner-dark.jpg)";
 
     // About Me
     const img = document.getElementById('profileImg');
@@ -99,7 +99,7 @@ function enableLightMode() {
 
     // intro header
     const header = document.getElementById("intro-header");
-    header.style.backgroundImage = "url(img/intro-bg.jpg)";
+    header.style.backgroundImage = "url(img/banner/banner-light.jpg)";
 
     // About Me
     const img = document.getElementById('profileImg');
