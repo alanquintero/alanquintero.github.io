@@ -178,7 +178,7 @@ input:checked + .slider:before {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url("../img/intro-bg.jpg?ver=1") no-repeat center center;
+    background: url("../img/banner/banner-light.jpg") no-repeat center center;
     background-size: cover;
 }
 
