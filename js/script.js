@@ -1,12 +1,45 @@
-const lightModeColor = 'black';
-const lightModeButtonsColor = '#333';
-const lightModeBackgroundColor = '#FCFCFC';
-const lightModeButtonHoverColor = "#D0D0D0";
-const lightModeBackgroundColorSectionA = '#DFDFDF';
-const darkModeColor = 'white';
+// ***** Light Mode *****
+// Intro Header Img
+const lightModeIntroHeaderImg = "img/banner/banner-light.jpg";
+// About Me Img
+const lightModeAboutMeImg = "img/aboutMe/profile-light.jpg";
+// Text, icons
+const lightModeTextColor = '#585757';
+const lightModeTitleTextColor = '#0171FF'
+const lightModeSubtitleTextColor = "#003153";
+// Background
+const lightModeBackgroundColor = '#F1F1F1';
+const lightModeBackgroundColorSectionA = '#FCFCFC';
+// Buttons
+const lightModeButtonsColor = '#0171FF';
+const lightModeButtonBackgroundColor = "#FCFCFC";
+const lightModeButtonHoverColor = "#66AAFF";
+//Lines
+const lightModeLineColor = "#0171FF";
+// Navbar
+const lightModeNavbarStyle = "navbar-light-style";
+
+// ***** Dark Mode *****
+// Intro Header Img
+const darkModeIntroHeaderImg = "img/banner/banner-dark.jpg";
+// About Me Img
+const darkModeAboutMeImg = "img/aboutMe/profile-dark.jpg";
+// Text, icons
+const darkModeTextColor = '#FCFCFC';
+const darkModeTitleTextColor = '#FCFCFC'
+const darkModeSubtitleTextColor = "#FCFCFC";
+// Background
 const darkModeBackgroundColor = '#1A1A1A';
-const darkModeButtonHoverColor = "#3A3A3A";
 const darkModeBackgroundColorSectionA = '#2C2C2C';
+// Buttons
+const darkModeButtonsColor = '#FCFCFC';
+const darkModeButtonBackgroundColor = "#2C2C2C";
+const darkModeButtonHoverColor = "#404040";
+//Lines
+const darkModeLineColor = "#B6E4EA";
+// Navbar
+const darkModeNavbarStyle = "navbar-dark-style";
+
 
 /**
  * Handles toggling between dark and light mode.
@@ -34,50 +67,37 @@ function handleDarkMode() {
 
 function enableDarkMode() {
     isDarkModeEnabled = true;
+
     // intro header
-    const header = document.getElementById("intro-header");
-    header.style.backgroundImage = "url(img/banner/banner-dark.jpg)";
+    setIntroHeaderImg(darkModeIntroHeaderImg)
 
     // About Me
-    const img = document.getElementById('profileImg');
-    img.src = 'img/aboutMe/profile-darkMode.jpg';
+    setAboutMeImg(darkModeAboutMeImg);
 
-    // divs
-    document.body.style.backgroundColor = darkModeBackgroundColor;
-    document.body.style.color = darkModeColor;
+    // Body style
+    setBodyStyle(darkModeBackgroundColor, darkModeTextColor)
 
-    const elements = document.getElementsByClassName("content-section-a");
-    for (let i = 0; i < elements.length; i++) {
-        elements[i].style.backgroundColor = darkModeBackgroundColorSectionA;
-        elements[i].style.color = darkModeColor;
-    }
+    // Content Section A
+    setContentSectionAStyle(darkModeBackgroundColorSectionA, darkModeTextColor)
 
-    const navbar = document.getElementById("navbar");
-    navbar.classList.remove("navbar-light-style");
-    navbar.classList.add("navbar-dark-style");
+    // Text
+    setTitleColor(darkModeTitleTextColor)
+    setSubtitleColor(darkModeSubtitleTextColor)
+
+    // Lines
+    setLinesColor(darkModeLineColor)
+
+    // Timeline
+    setTimelineColor(darkModeLineColor)
+
+    // Navbar
+    setNavbarStyle(darkModeNavbarStyle, lightModeNavbarStyle);
 
     // footer
-    const footer = document.getElementById("footer");
-    footer.style.backgroundColor = darkModeBackgroundColorSectionA;
-    footer.style.color = darkModeColor;
+    setFooterStyle(darkModeBackgroundColorSectionA, darkModeTextColor);
 
     // buttons
-    const buttons = document.getElementsByClassName("btn");
-    for (let i = 0; i < buttons.length; i++) {
-        // base style
-        buttons[i].style.backgroundColor = darkModeBackgroundColorSectionA;
-        buttons[i].style.color = darkModeColor;
-
-        // hover in
-        buttons[i].addEventListener("mouseenter", function () {
-            buttons[i].style.backgroundColor = darkModeButtonHoverColor;
-        });
-
-        // hover out
-        buttons[i].addEventListener("mouseleave", function () {
-            buttons[i].style.backgroundColor = darkModeBackgroundColorSectionA;
-        });
-    }
+    setButtonsStyle(darkModeButtonsColor, darkModeButtonBackgroundColor, darkModeButtonHoverColor)
 }
 
 /**
@@ -91,51 +111,127 @@ function enableLightMode() {
     isDarkModeEnabled = false;
 
     // intro header
-    const header = document.getElementById("intro-header");
-    header.style.backgroundImage = "url(img/banner/banner-light.jpg)";
+    setIntroHeaderImg(lightModeIntroHeaderImg);
 
     // About Me
-    const img = document.getElementById('profileImg');
-    img.src = 'img/aboutMe/profile-lightMode.jpg';
+    setAboutMeImg(lightModeAboutMeImg);
 
-    // divs
-    document.body.style.backgroundColor = lightModeBackgroundColor;
-    document.body.style.color = lightModeColor;
+    // Body style
+    setBodyStyle(lightModeBackgroundColor, lightModeTextColor)
 
-    const elements = document.getElementsByClassName("content-section-a");
-    for (let i = 0; i < elements.length; i++) {
-        elements[i].style.backgroundColor = lightModeBackgroundColorSectionA;
-        elements[i].style.color = lightModeColor;
-    }
+    // Content Section A
+    setContentSectionAStyle(lightModeBackgroundColorSectionA, lightModeTextColor)
+
+    // Text
+    setTitleColor(lightModeTitleTextColor)
+    setSubtitleColor(lightModeSubtitleTextColor)
+
+    // Lines
+    setLinesColor(lightModeLineColor)
+
+    // Timeline
+    setTimelineColor(lightModeLineColor)
 
     // navbar
-    const navbar = document.getElementById("navbar");
-    navbar.classList.add("navbar-light-style");
-    navbar.classList.remove("navbar-dark-style");
+    setNavbarStyle(lightModeNavbarStyle, darkModeNavbarStyle)
 
     // footer
-    const footer = document.getElementById("footer");
-    footer.style.backgroundColor = lightModeBackgroundColor;
-    footer.style.color = lightModeColor;
+    setFooterStyle(lightModeBackgroundColor, lightModeTextColor);
 
     // buttons
+    setButtonsStyle(lightModeButtonsColor, lightModeButtonBackgroundColor, lightModeButtonHoverColor)
+}
+
+// ***************** Methods to change color for Dark/Light mode - Starts - *****************
+
+function setIntroHeaderImg(img) {
+    const header = document.getElementById("intro-header");
+    header.style.backgroundImage = "url(" + img + ")";
+}
+
+function setAboutMeImg(img) {
+    const profileImg = document.getElementById('profileImg');
+    profileImg.src = img;
+}
+
+function setBodyStyle(backgroundColor, textColor) {
+    document.body.style.backgroundColor = backgroundColor;
+    document.body.style.color = textColor;
+}
+
+function setContentSectionAStyle(backgroundColor, textColor) {
+    const elements = document.getElementsByClassName("content-section-a");
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].style.backgroundColor = backgroundColor;
+        elements[i].style.color = textColor;
+    }
+}
+
+function setTitleColor(textColor) {
+    const titles = document.getElementsByClassName("title");
+    for (let i = 0; i < titles.length; i++) {
+        titles[i].style.color = textColor;
+    }
+}
+
+function setSubtitleColor(textColor) {
+    const subtitles = document.getElementsByClassName("subtitle");
+    for (let i = 0; i < subtitles.length; i++) {
+        subtitles[i].style.color = textColor;
+    }
+}
+
+function setLinesColor(lineColor) {
+    const customLines = document.getElementsByClassName("custom-line");
+    for (let i = 0; i < customLines.length; i++) {
+        customLines[i].style.color = lineColor;
+    }
+}
+
+function setTimelineColor(timelineColor) {
+    const timelines = document.getElementsByClassName("timeline");
+    for (let i = 0; i < timelines.length; i++) {
+        timelines[i].style.setProperty('--timeline-bg', timelineColor);
+    }
+    document.querySelectorAll('.page-header')
+        .forEach(el => el.style.borderColor = timelineColor);
+
+    document.querySelectorAll('.timeline > li > .timeline-badge')
+        .forEach(el => el.style.borderColor = timelineColor);
+}
+
+function setNavbarStyle(styleToAdd, styleToRemove) {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.remove(styleToRemove);
+    navbar.classList.add(styleToAdd);
+}
+
+function setButtonsStyle(buttonColor, buttonBackgroundColor, hoverColor) {
     const buttons = document.getElementsByClassName("btn");
     for (let i = 0; i < buttons.length; i++) {
         // base style
-        buttons[i].style.backgroundColor = lightModeBackgroundColorSectionA;
-        buttons[i].style.color = lightModeButtonsColor;
+        buttons[i].style.backgroundColor = buttonBackgroundColor;
+        buttons[i].style.color = buttonColor;
 
         // hover in
         buttons[i].addEventListener("mouseenter", function () {
-            buttons[i].style.backgroundColor = lightModeButtonHoverColor;
+            buttons[i].style.backgroundColor = hoverColor;
         });
 
         // hover out
         buttons[i].addEventListener("mouseleave", function () {
-            buttons[i].style.backgroundColor = lightModeBackgroundColorSectionA;
+            buttons[i].style.backgroundColor = buttonBackgroundColor;
         });
     }
 }
+
+function setFooterStyle(backgroundColor, textColor) {
+    const footer = document.getElementById("footer");
+    footer.style.backgroundColor = backgroundColor;
+    footer.style.color = textColor;
+}
+
+// ***************** Methods to change color for Dark/Light mode - Ends - *****************
 
 /**
  * Displays a set of icons responsively.

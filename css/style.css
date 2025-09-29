@@ -37,7 +37,7 @@ h6 {
 .section-heading-spacer {
     float: left;
     width: 200px;
-    border-top: 3px solid #e7e7e7;
+    border-top: 3px solid;
 }
 
 .page-header {
@@ -388,13 +388,17 @@ input:checked + .slider:before {
     position: relative;
 }
 
+:root {
+    --timeline-bg: #eeeeee;
+}
+
 .timeline:before {
     top: 0;
     bottom: 0;
     position: absolute;
     content: " ";
     width: 3px;
-    background-color: #eeeeee;
+    background-color: var(--timeline-bg, #eeeeee);
     left: 50%;
     margin-left: -1.5px;
 }
