@@ -184,7 +184,7 @@ input:checked + .slider:before {
 
 .intro-message {
     position: relative;
-    padding-top: 180px;
+    padding-top: 230px;
     padding-bottom: 50px;
     text-align: center;
 }
