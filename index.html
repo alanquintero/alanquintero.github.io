@@ -7,6 +7,9 @@
     <meta name="description" content="Personal Website of Alan Quintero - Software Engineer">
     <meta name="author" content="Alan Quintero">
 
+    <!-- Canonical -->
+    <link rel="canonical" href="https://alanquintero.github.io/">
+
     <!-- Open Graph for social sharing -->
     <meta property="og:type" content="profile"/>
     <meta property="og:title" content="Alan Quintero - Software Engineer"/>
@@ -17,6 +20,13 @@
     <meta property="og:locale" content="en_US"/>
     <meta property="profile:first_name" content="Alan"/>
     <meta property="profile:last_name" content="Quintero"/>
+
+    <!-- Twitter cards -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Alan Quintero - Software Engineer"/>
+    <meta name="twitter:description"
+          content="Personal website of Alan Quintero, Software Engineer focused on backend systems and high-scale infrastructure."/>
+    <meta name="twitter:image" content="https://alanquintero.github.io/img/share/share.jpg"/>
 
     <!-- Title -->
     <title>Alan Quintero</title>
@@ -35,6 +45,8 @@
 
 <body>
 
+<a class="sr-only sr-only-focusable" href="#main">Skip to main content</a>
+
 <!-- ===================================== -->
 <!-- ========= NAVIGATION ================ -->
 <!-- ===================================== -->
@@ -49,14 +61,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#home">Home</a>
         </div>
 
         <!-- Dark/Light mode switch -->
         <div class="navbar-right">
             <label class="switch">
-                <input id="dark-mode-switch" type="checkbox" onclick="handleDarkMode()" checked
-                       aria-label="Toggle dark mode">
+                <input id="dark-mode-switch" type="checkbox" checked aria-label="Toggle dark mode">
                 <span class="slider round">
 		          <span class="icon sun">☀</span>
 		          <span class="icon moon">☾</span>
@@ -84,50 +95,55 @@
 <!-- ========= HOME ================== -->
 <!-- ================================= -->
 <a id="home"></a>
-<div class="intro-header" id="intro-header">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="intro-message">
-                    <ul class="list-inline intro-social-buttons" id="headList">
-                        <!-- LinkedIn -->
-                        <li class="list-inline" id="headElement1">
-                            <a href="https://www.linkedin.com/in/alan-quintero" title="LinkedIn" target="_blank"
-                               class="btn btn-default btn-lg">
-                                <i class="fa-brands fa-linkedin fa-fw"></i>
-                                <span class="network-name"></span>
-                            </a>
-                        </li>
-                        <!-- Android Apps -->
-                        <li class="list-inline" id="headElement2">
-                            <a href="https://play.google.com/store/apps/developer?id=aquintero" title="Android Apps"
-                               target="_blank" class="btn btn-default btn-lg">
-                                <i class="fa-brands fa-android fa-fw"></i>
-                                <span class="network-name"></span>
-                            </a>
-                        </li>
-                        <!-- Github -->
-                        <li class="list-inline" id="headElement3">
-                            <a href="https://github.com/alanquintero" title="Github" target="_blank"
-                               class="btn btn-default btn-lg">
-                                <i class="fa-brands fa-github fa-fw"></i>
-                                <span class="network-name"></span>
-                            </a>
-                        </li>
-                        <!-- StackOverflow -->
-                        <li class="list-inline" id="headElement4">
-                            <a href="https://stackoverflow.com/users/7845497/alan-quintero"
-                               title="StackOverflow" target="_blank" class="btn btn-default btn-lg">
-                                <i class="fa-brands fa-stack-overflow fa-fw"></i>
-                                <span class="network-name"></span>
-                            </a>
-                        </li>
-                    </ul>
+<main id="main" role="main">
+    <h1 class="sr-only">Alan Quintero - Software Engineer</h1>
+    <div class="intro-header" id="intro-header">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <ul class="list-inline intro-social-buttons" id="headList">
+                            <!-- LinkedIn -->
+                            <li class="list-inline" id="headElement1">
+                                <a href="https://www.linkedin.com/in/alan-quintero" title="LinkedIn" target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="btn btn-default btn-lg">
+                                    <i class="fa-brands fa-linkedin fa-fw"></i>
+                                    <span class="network-name"></span>
+                                </a>
+                            </li>
+                            <!-- Android Apps -->
+                            <li class="list-inline" id="headElement2">
+                                <a href="https://play.google.com/store/apps/developer?id=aquintero" title="Android Apps"
+                                   target="_blank" rel="noopener noreferrer" class="btn btn-default btn-lg">
+                                    <i class="fa-brands fa-android fa-fw"></i>
+                                    <span class="network-name"></span>
+                                </a>
+                            </li>
+                            <!-- Github -->
+                            <li class="list-inline" id="headElement3">
+                                <a href="https://github.com/alanquintero" title="Github" target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="btn btn-default btn-lg">
+                                    <i class="fa-brands fa-github fa-fw"></i>
+                                    <span class="network-name"></span>
+                                </a>
+                            </li>
+                            <!-- StackOverflow -->
+                            <li class="list-inline" id="headElement4">
+                                <a href="https://stackoverflow.com/users/7845497/alan-quintero"
+                                   title="StackOverflow" target="_blank" rel="noopener noreferrer"
+                                   class="btn btn-default btn-lg">
+                                    <i class="fa-brands fa-stack-overflow fa-fw"></i>
+                                    <span class="network-name"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
 <!-- ================================= -->
@@ -140,7 +156,7 @@
             <!-- Profile Image -->
             <div class="col-lg-5 col-lg-offset-2 col-sm-6 text-center">
                 <img id="profileImg" class="img-responsive img-circle" src="img/aboutMe/profile-light.jpg"
-                     alt=""
+                     alt="Portrait photo of Alan Quintero"
                      style="width:400px;height:420px;">
             </div>
 
@@ -176,7 +192,8 @@
                 <ul class="list-inline mt-2">
                     <li>
                         <span class="fa-brands fa-square-linkedin fa-fw"></span>
-                        <a href="https://www.linkedin.com/in/alan-quintero" target="_blank">in/alan-quintero</a>
+                        <a href="https://www.linkedin.com/in/alan-quintero" target="_blank"
+                           rel="noopener noreferrer">in/alan-quintero</a>
                     </li>
                     <li>
                         | <i class="fa-solid fa-map-marker"></i>&nbsp;&nbsp; San Diego, CA, USA |
@@ -225,6 +242,7 @@
                                 <a
                                         href="https://www.threads.com/@theahmedghanem/post/DF0bV0st1IG?hl=en"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                 >
                                     the Messenger’s Friends tab
                                 </a>,
@@ -236,6 +254,7 @@
                                 <a
                                         href="https://youtu.be/0MA9TXm3d1A"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                 >
                                     Meta AI
                                 </a>
@@ -248,6 +267,7 @@
                                 <a
                                         href="https://wabetainfo.com/whatsapp-is-releasing-larger-groups-up-to-1024-participants/"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                 >
                                     from 256 to 1024 participants.
                                 </a>.
@@ -537,11 +557,13 @@
             <div class="row g-3">
                 <div class="col-6 col-md-4 mb-3 spacing-mobile">
                     <img src="img/certifications/android.jpg" class="img-fluid img-rounded rounded clickable-img"
-                         alt="Android certification">
+                         alt="Android certification"
+                         loading="lazy" decoding="async">
                 </div>
                 <div class="col-6 col-md-4 mb-3 spacing-mobile">
                     <img src="img/certifications/java6.jpg" class="img-fluid img-rounded rounded clickable-img"
-                         alt="Java 6 certification">
+                         alt="Java 6 certification"
+                         loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
@@ -561,15 +583,18 @@
             <div class="row g-3">
                 <div class="col-6 col-md-4 mb-3 spacing-mobile">
                     <img src="img/awards/award3.jpg" class="img-fluid img-rounded rounded clickable-img"
-                         alt="Award image">
+                         alt="Award image"
+                         loading="lazy" decoding="async">
                 </div>
                 <div class="col-6 col-md-4 mb-3 spacing-mobile">
                     <img src="img/awards/award2.jpg" class="img-fluid img-rounded rounded clickable-img"
-                         alt="Award image">
+                         alt="Award image"
+                         loading="lazy" decoding="async">
                 </div>
                 <div class="col-6 col-md-4 mb-3 spacing-mobile">
                     <img src="img/awards/award1.jpg" class="img-fluid img-rounded rounded clickable-img"
-                         alt="Award image">
+                         alt="Award image"
+                         loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
@@ -578,7 +603,7 @@
 
 <!-- Modal to expand the image when click on it -->
 <div id="imageModalContainer">
-    <img id="imageModal" src="" alt="">
+    <img id="imageModal" src="" alt="Expanded image">
 </div>
 
 <!-- ============================================ -->
@@ -610,18 +635,20 @@
                                 <p class="lead">Helped over 10000+ users improve their reading experience on older
                                     Android devices.</p>
                                 <a href="https://play.google.com/store/apps/details?id=autonightmode.mx.com.alanquintero.autonightmode"
-                                   class="btn btn-success btn-lg" target="_blank">
+                                   class="btn btn-success btn-lg" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-brands fa-android"></i> Android App
                                 </a>
                                 <br/><br/>
                                 <a href="https://github.com/alanquintero/readmode" target="_blank"
+                                   rel="noopener noreferrer"
                                    class="btn btn-default btn-lg"><i class="fa-brands fa-github fa-fw"></i> <span
                                         class="network-name">Source Code</span></a>
                             </div>
                             <br/>
                             <div class="col-lg-5 col-sm-6">
                                 <img class="img-responsive img-rounded" src="img/projects/read-mode.jpg"
-                                     alt="Read Mode project">
+                                     alt="Read Mode project"
+                                     loading="lazy" decoding="async">
                             </div>
                         </div>
                     </div>
@@ -636,14 +663,15 @@
                                 <p class="lead">Designed and developed a static website for a small business, improving
                                     their online presence and supporting business growth.</p>
                                 <a href="http://oscarsexperttreeservice.com/" class="btn btn-primary btn-lg"
-                                   target="_blank">
+                                   target="_blank" rel="noopener noreferrer">
                                     <i class="fa-solid fa-globe"></i> Client Website
                                 </a>
                             </div>
                             <br/>
                             <div class="col-lg-5 col-sm-6">
                                 <img class="img-responsive img-rounded" src="img/projects/oscar.jpg"
-                                     alt="Oscar project">
+                                     alt="Oscar project"
+                                     loading="lazy" decoding="async">
                             </div>
                         </div>
                     </div>
@@ -658,18 +686,20 @@
                                 <p class="lead">Built a web app with Google GeoChart library to highlight U.S. regions
                                     and generate printable maps.</p>
                                 <a href="https://google-geochart.pages.dev/" class="btn btn-info btn-lg"
-                                   target="_blank">
+                                   target="_blank" rel="noopener noreferrer">
                                     <i class="fa-solid fa-map"></i> Interactive Map
                                 </a>
                                 <br/><br/>
                                 <a href="https://github.com/alanquintero/google-geochart" target="_blank"
+                                   rel="noopener noreferrer"
                                    class="btn btn-default btn-lg"><i class="fa-brands fa-github fa-fw"></i> <span
                                         class="network-name">Source Code</span></a>
                             </div>
                             <br/>
                             <div class="col-lg-5 col-sm-6">
                                 <img class="img-responsive img-rounded" src="img/projects/geochart.jpg"
-                                     alt="GeoChart project">
+                                     alt="GeoChart project"
+                                     loading="lazy" decoding="async">
                             </div>
                         </div>
                     </div>
@@ -682,13 +712,15 @@
                                 <div class="clearfix"></div>
                                 <h2 class="section-heading">More Projects...</h2>
                                 <a href="https://github.com/alanquintero?tab=repositories" target="_blank"
+                                   rel="noopener noreferrer"
                                    class="btn btn-default btn-lg"><i class="fa-brands fa-github fa-fw"></i> <span
                                         class="network-name">Github</span></a>
                             </div>
                             <br/>
                             <div class="col-lg-5 col-sm-6">
                                 <img class="img-responsive img-rounded" src="img/projects/more-projects.jpg"
-                                     alt="More Github projects">
+                                     alt="More GitHub projects"
+                                     loading="lazy" decoding="async">
                             </div>
                         </div>
                     </div>
@@ -727,15 +759,17 @@
                     consistent effort."</i></p>
                 <!-- Links are not available
                 <a href="https://www.duolingo.com/profile/alan.quintero?via=share_profile_link" title="Duolingo"
-                   target="_blank">
+                   target="_blank" rel="noopener noreferrer">
                     <img class="more-about-logo info img-responsive" src="img/moreAboutMe/duolingo.png"
                          alt="Duolingo logo">
                 </a>
-                <a href="https://fable.co/fabler/alan-226170356372" title="Fable" target="_blank">
+                <a href="https://fable.co/fabler/alan-226170356372" title="Fable" target="_blank"
+                   rel="noopener noreferrer">
                     <img class="more-about-logo info img-responsive" src="img/moreAboutMe/fable.jpg"
                          alt="Fable logo">
                 </a>
-                <a href="https://www.goodreads.com/user/show/75090774-alan-quintero" title="Goodreads" target="_blank">
+                <a href="https://www.goodreads.com/user/show/75090774-alan-quintero" title="Goodreads" target="_blank"
+                   rel="noopener noreferrer">
                     <img class="more-about-logo info img-responsive" src="img/moreAboutMe/goodreads.png"
                          alt="Goodreads logo">
                 </a>
@@ -745,13 +779,16 @@
             <div class="col-lg-6 col-sm-6">
                 <img class="photo-desktop img-responsive img-rounded" src="img/moreAboutMe/desktop.jpg"
                      alt="desktop version"
-                     style="width:600px;height:320px;">
+                     style="width:600px;height:320px;"
+                     loading="lazy" decoding="async">
                 <img class="photo-mobile img-responsive img-rounded" src="img/moreAboutMe/mobile.jpg"
-                     alt="mobile version">
+                     alt="mobile version"
+                     loading="lazy" decoding="async">
             </div>
         </div>
     </div>
 </div>
+    </main>
 
 <!-- ========================================== -->
 <!-- ========= SECTION: FOOTER ================ -->
@@ -804,10 +841,10 @@
     </div>
 </footer>
 
-<script src="js/script.js?ver=1.8.2"></script>
 <!-- jQuery -->
-<script src="vendor/jquery-3.7.1.min.js"></script>
+<script src="vendor/jquery-3.7.1.min.js" defer></script>
 <!-- Bootstrap Core JavaScript -->
-<script src="vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="vendor/bootstrap-3.3.7/js/bootstrap.min.js" defer></script>
+<script src="js/script.js?ver=1.8.2" defer></script>
 </body>
 </html>

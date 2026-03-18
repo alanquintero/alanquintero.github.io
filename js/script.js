@@ -345,12 +345,19 @@ function enableImageModal() {
 // Detect system preference
 let isDarkModeEnabled = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+function syncDarkModeSwitch() {
+    const switchEl = document.getElementById('dark-mode-switch');
+    if (!switchEl) return;
+    switchEl.checked = isDarkModeEnabled;
+}
+
 // Enables dark/light mode
 if (window.matchMedia && isDarkModeEnabled) {
     enableDarkMode();
 } else {
     enableLightMode();
 }
+syncDarkModeSwitch();
 
 /* HOME icons alignment */
 let mobile = window.matchMedia('(max-width: 768px)').matches;
@@ -362,3 +369,13 @@ if (mobile) {
 
 /* Listener for the image modal */
 document.addEventListener('DOMContentLoaded', enableImageModal);
+
+/* Listener for Dark/Light mode toggle */
+document.addEventListener('DOMContentLoaded', () => {
+    const switchEl = document.getElementById('dark-mode-switch');
+    if (!switchEl) return;
+    switchEl.addEventListener('change', () => {
+        handleDarkMode();
+        syncDarkModeSwitch();
+    });
+});
