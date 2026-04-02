@@ -348,6 +348,69 @@ nav.navbar-dark-style a:hover {
     height: 0;
 }
 
+/* Skills section visual refresh */
+#skills .title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+#skills .skill-grid {
+    margin: 0;
+    padding: 0;
+}
+
+#skills .skill-card {
+    background: #ffffff;
+    border: 1px solid #dde6ef;
+    border-radius: 14px;
+    box-shadow: 0 8px 16px rgba(26, 64, 102, 0.1);
+    padding: 18px;
+    margin-bottom: 1rem;
+    flex: 1 1 100%;
+}
+
+#skills .skill-card h3 {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+    font-size: 1.05rem;
+    color: #1f4b72;
+}
+
+#skills .skill-card ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#skills .skill-card ul li {
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #f0f4f9;
+    color: #34495e;
+    font-weight: 500;
+    line-height: 1.45;
+}
+
+#skills .skill-card ul li:last-child {
+    border-bottom: none;
+}
+
+@media (min-width: 992px) {
+    #skills .skill-card {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 767px) {
+    #skills .skill-card {
+        flex: 1 1 100%;
+    }
+}
+
 /* The slider */
 .slider {
     position: absolute;
