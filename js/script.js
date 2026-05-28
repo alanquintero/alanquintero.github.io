@@ -1,8 +1,8 @@
 // ***** Light Mode *****
 // Intro Header Img
-const lightModeIntroHeaderImg = "img/banner/banner-light.jpg";
+const lightModeIntroHeaderImg = "img/banner/banner-light.webp";
 // About Me Img
-const lightModeAboutMeImg = "img/aboutMe/profile-light.jpg";
+const lightModeAboutMeImg = "img/aboutMe/profile-light.webp";
 // Text, icons
 const lightModeTextColor = '#585757';
 const lightModeTitleTextColor = '#0171FF'
@@ -21,9 +21,9 @@ const lightModeNavbarStyle = "navbar-light-style";
 
 // ***** Dark Mode *****
 // Intro Header Img
-const darkModeIntroHeaderImg = "img/banner/banner-dark.jpg";
+const darkModeIntroHeaderImg = "img/banner/banner-dark.webp";
 // About Me Img
-const darkModeAboutMeImg = "img/aboutMe/profile-dark.jpg";
+const darkModeAboutMeImg = "img/aboutMe/profile-dark.webp";
 // Text, icons
 const darkModeTextColor = '#FCFCFC';
 const darkModeTitleTextColor = '#FCFCFC'
